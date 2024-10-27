@@ -1,0 +1,1 @@
+web: gunicorn star_wardrobe.wsgi:application
