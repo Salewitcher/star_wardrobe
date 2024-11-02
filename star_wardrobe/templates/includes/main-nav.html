@@ -1,0 +1,54 @@
+<div class="collapse navbar-collapse" id="main-nav">
+    <ul class="navbar-nav w-auto mx-auto">
+        <li class="nav-item dropdown">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                All Products
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
+                <a href="" class="dropdown-item">By Price</a>
+                <a href="" class="dropdown-item ">By Rating</a>
+                <a href="" class="dropdown-item ">By Category</a>
+                <a href="" class="dropdown-item">All Products</a>
+            </div>
+        </li>
+
+        <li class="nav-item dropdown">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="clothing-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Rebel Apparel
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
+                <a href="{% url 'clothing_activewear' %}" class="dropdown-item">Jedi Robes</a>
+                <a href="{% url 'clothing_jeans' %}" class="dropdown-item">Sith Jeans</a>
+                <a href="{% url 'clothing_shirts' %}" class="dropdown-item">Galactic Shirts</a>
+                <a href="{% url 'all_clothing' %}" class="dropdown-item">All Apparel</a>
+            </div>
+        </li>
+        
+
+        <li class="nav-item dropdown">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="toys-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Star Wars Toys
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="toys-link">
+                <a href="{% url 'toys_action_figures' %}" class="dropdown-item">Action Figures</a>
+                <a href="{% url 'toys_lego' %}" class="dropdown-item">LEGO Sets</a>
+                <a href="{% url 'toys_plush' %}" class="dropdown-item">Plush Toys</a>
+                <a href="{% url 'toys_collectibles' %}" class="dropdown-item">Collectibles</a>
+                <a href="{% url 'all_toys' %}" class="dropdown-item">All Toys</a>
+            </div>
+        </li>
+        
+
+        <li class="nav-item dropdown">
+            <a class="logo-font font-weight-bold nav-link text-black" href="#" id="specials-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Special Offers
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="specials-link">
+                <a href="" class="dropdown-item">New Arrivals</a>
+                <a href="" class="dropdown-item">Deals</a>
+                <a href="" class="dropdown-item">Clearance</a>
+                <a href="" class="dropdown-item">All Specials</a>
+            </div>
+        </li>
+    </ul>
+</div>
