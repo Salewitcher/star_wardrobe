@@ -1,0 +1,203 @@
+html {
+    height: 100%;
+}
+
+body {
+    background: url('/media/space_background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: calc(100vh - 164px);
+    color: #d1d1d1; /* Light gray for readability on dark backgrounds */
+    font-family: 'Lato', sans-serif;
+}
+
+/* Star Wars-style fonts and effects */
+.logo-font {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #ffd700; /* Gold for Star Wars logo */
+}
+
+.main-logo-link {
+    width: fit-content;
+}
+
+.shop-now-button {
+    background: #111; /* Deep black for buttons */
+    color: #ffd700; /* Gold text */
+    min-width: 260px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.btn-black {
+    background: #111;
+    color: #ffd700;
+    border-radius: 5px;
+}
+
+.btn-outline-black {
+    background: transparent;
+    color: #ffd700 !important;
+    border: 1px solid #ffd700;
+    border-radius: 5px;
+}
+
+.btn-outline-black:hover,
+.btn-outline-black:active,
+.btn-outline-black:focus {
+    background: #ffd700;
+    color: #111 !important;
+}
+
+.shop-now-button:hover,
+.shop-now-button:active,
+.shop-now-button:focus,
+.btn-black:hover,
+.btn-black:active,
+.btn-black:focus {
+    background: #ffd700;
+    color: #111;
+}
+
+.text-black {
+    color: #ffd700 !important; /* Matching accent color */
+}
+
+.border-black {
+    border: 1px solid #ffd700 !important;
+}
+
+.bg-black {
+    background: #111 !important;
+}
+
+/* Adding starry overlay effect */
+.overlay {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: rgba(17, 17, 17, 0.8) url('/media/stars_overlay.png') repeat;
+    z-index: -1;
+}
+
+a.category-badge > span.badge:hover {
+    background: #444 !important; /* Dark hover effect */
+    color: #ffd700 !important;
+}
+
+.btt-button {
+    height: 42px;
+    width: 42px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background: #111;
+    color: #ffd700;
+    border-radius: 50%;
+}
+
+.btt-link,
+.update-link,
+.remove-item {
+    cursor: pointer;
+    color: #ffd700;
+}
+
+input[name='q']::placeholder {
+    color: #888888;
+}
+
+/* ------------------------------- Bootstrap Toasts */
+.message-container {
+    position: fixed;
+    top: 72px;
+    right: 15px;
+    z-index: 99999999999;
+}
+
+.custom-toast {
+    overflow: visible;
+    background: #111;
+    color: #ffd700;
+    border-radius: 3px;
+}
+
+.toast-capper {
+    height: 2px;
+    background: #ffd700;
+}
+
+/* Allauth Form Formatting */
+.allauth-form-inner-content p {
+    margin-top: 1.5rem;
+    color: #b8b8b8; /* Lighter gray for form text */
+}
+
+.allauth-form-inner-content input {
+    border-color: #ffd700;
+    border-radius: 5px;
+}
+
+.allauth-form-inner-content input::placeholder {
+    color: #888888;
+}
+
+.allauth-form-inner-content button,
+.allauth-form-inner-content input[type='submit'] {
+    background-color: #111;
+    border: 1px solid #ffd700;
+    color: #ffd700;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.allauth-form-inner-content button:hover,
+.allauth-form-inner-content input[type='submit']:hover {	
+    color: #111;
+    background-color: #ffd700;
+    border-color: #ffd700;
+}
+
+.allauth-form-inner-content a {
+    color: #ffd700;
+}
+
+/* Custom Checkbox */
+.custom-checkbox .custom-control-label::before {
+    border-radius: 0;
+    border-color: #ffd700;
+}
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+    background-color: #ffd700;
+    border-color: #ffd700;
+}
+
+/* Top Navbar Styling */
+@media (min-width: 992px) {
+    .fixed-top-desktop-only {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+        background: rgba(17, 17, 17, 0.8);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    }
+
+    .header-container {
+        padding-top: 164px;
+    }
+}
+
+@media (max-width: 991px) {
+    .header-container {
+        padding-top: 116px;
+    }
+
+    body {
+        height: calc(100vh - 116px);
+    }
+}
