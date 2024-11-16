@@ -17,10 +17,10 @@
                 Rebel Apparel
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="{% url 'clothing_activewear' %}" class="dropdown-item">Jedi Robes</a>
-                <a href="{% url 'clothing_jeans' %}" class="dropdown-item">Sith Jeans</a>
-                <a href="{% url 'clothing_shirts' %}" class="dropdown-item">Galactic Shirts</a>
-                <a href="{% url 'all_clothing' %}" class="dropdown-item">All Apparel</a>
+                <a href="{% url 'products' %}?category=jedi_robes" class="dropdown-item">Jedi Robes</a>
+                <a href="{% url 'products' %}?category=sith_jeans" class="dropdown-item">Sith Jeans</a>
+                <a href="{% url 'products' %}?category=galactic_shirts" class="dropdown-item">Galactic Shirts</a>
+                <a href="{% url 'products' %}?category=jedi_robes,sith jeans,galactic_shirts" class="dropdown-item">All Apparel</a>
             </div>
         </li>
         
@@ -30,11 +30,11 @@
                 Star Wars Toys
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="toys-link">
-                <a href="{% url 'toys_action_figures' %}" class="dropdown-item">Action Figures</a>
-                <a href="{% url 'toys_lego' %}" class="dropdown-item">LEGO Sets</a>
-                <a href="{% url 'toys_plush' %}" class="dropdown-item">Plush Toys</a>
-                <a href="{% url 'toys_collectibles' %}" class="dropdown-item">Collectibles</a>
-                <a href="{% url 'all_toys' %}" class="dropdown-item">All Toys</a>
+                <a href="{% url 'products' %}?category=action_figures" class="dropdown-item">Action Figures</a>
+                <a href="{% url 'products' %}?category=lego_sets" class="dropdown-item">LEGO Sets</a>
+                <a href="{% url 'products' %}?category=plush_toys" class="dropdown-item">Plush Toys</a>
+                <a href="{% url 'products' %}?category=collectibles" class="dropdown-item">Collectibles</a>
+                <a href="{% url 'products' %}?category=action_figures,lego_sets,plush_toys,collectibles" class="dropdown-item">All Toys</a>
             </div>
         </li>
         
@@ -44,10 +44,10 @@
                 Special Offers
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">New Arrivals</a>
-                <a href="" class="dropdown-item">Deals</a>
-                <a href="" class="dropdown-item">Clearance</a>
-                <a href="" class="dropdown-item">All Specials</a>
+                <a href="{% url 'products' %}?category=new_arrivals" class="dropdown-item">New Arrivals</a>
+                <a href="{% url 'products' %}?category=deals" class="dropdown-item">Deals</a>
+                <a href="{% url 'products' %}?category=clearance" class="dropdown-item">Clearance</a>
+                <a href="{% url 'products' %}?category=new_arrivals,deals,clearance" class="dropdown-item">All Specials</a>
             </div>
         </li>
     </ul>
