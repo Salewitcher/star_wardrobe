@@ -9,4 +9,4 @@ def index(request):
 
 def products(request):
     
-    return render(request, 'home/products.html')
+    return render(request, 'products/products.html')
