@@ -1,4 +1,3 @@
-
 from decimal import Decimal
 from django.conf import settings
 from django.shortcuts import get_object_or_404
@@ -28,7 +27,7 @@ def bag_contents(request):
                 product_count += quantity
                 bag_items.append({
                     'item_id': item_id,
-                    'quantity': item_data,
+                    'quantity': quantity,
                     'product': product,
                     'size': size,
                 })
