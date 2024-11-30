@@ -47,6 +47,16 @@
   background: #1a1a1a; /* Matches inputs */
 }
 
+select,
+select option {
+    color: #000000;
+}
+
+select:invalid,
+select option[value=""] {
+    color: #aab7c4 !important;
+}
+
 /* Loading overlay styled like hyperspace */
 #loading-overlay {
   display: none;
