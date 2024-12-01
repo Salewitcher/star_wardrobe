@@ -22,25 +22,10 @@
         <meta property="og:type" content="website">
 
         <!-- Favicon -->
-        <link rel="icon" href="{{ MEDIA_URL }}favicon.ico" type="image/x-icon">
+        <link rel="icon" href='media/favicon.ico' type="image/x-icon">
 
-        <!-- Preconnect for Performance -->
+        <!-- Preconnect for Performance-->
         <link rel="preconnect" href="https://cdn.jsdelivr.net">
-
-        <!-- Structured Data -->
-        <script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
-          "@type": "Organization",
-          "name": "Star WarDrobe",
-          "url": "https://yourwebsite.com",
-          "logo": "https://yourwebsite.com/path-to-image.jpg",
-          "sameAs": [
-            "https://www.facebook.com/yourpage",
-            "https://www.instagram.com/yourpage"
-          ]
-        }
-        </script>
 
         <title>Star WarDrobe{% block extra_title %}{% endblock %}</title>
     {% endblock %}
