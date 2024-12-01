@@ -25,7 +25,7 @@ body {
     width: fit-content;
 }
 
-/* Hover Animation for Buttons */
+/* Button Styling */
 .shop-now-button,
 .btn-black {
     background: #000; /* Deep black for buttons */
@@ -139,18 +139,6 @@ body {
     }
 }
 
-/* Custom Checkbox Styling */
-.custom-checkbox .custom-control-label::before {
-    border-radius: 2px; /* Sharp edges for futuristic look */
-    border-color: #ffd700;
-    box-shadow: 0 0 5px rgba(255, 215, 0, 0.7);
-}
-
-.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
-    background-color: #ffd700;
-    border-color: #ffd700;
-}
-
 /* Placeholder Styling */
 input[name='q']::placeholder,
 .allauth-form-inner-content input::placeholder {
@@ -181,4 +169,29 @@ input[name='q']::placeholder,
     body {
         height: calc(100vh - 116px);
     }
+}
+
+/* Form Enhancements */
+.allauth-form-inner-content input {
+    border-color: #ffd700;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(255, 215, 0, 0.7);
+}
+
+.allauth-form-inner-content button,
+.allauth-form-inner-content input[type='submit'] {
+    background-color: #000;
+    color: #ffd700;
+    font-weight: bold;
+    border: 1px solid #ffd700;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.allauth-form-inner-content button:hover,
+.allauth-form-inner-content input[type='submit']:hover {
+    background-color: #ffd700;
+    color: #000;
+    border-color: #ffd700;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 1);
 }
