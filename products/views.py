@@ -4,7 +4,7 @@ from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
 
-from .models import Product, Category
+from .models import Product, Category, Wishlist, ProductReview, DiscountCode
 from .forms import ProductForm
 
 # Create your views here.
@@ -32,7 +32,7 @@ def all_products(request):
                 if direction == 'desc':
                     sortkey = f'-{sortkey}'
             products = products.order_by(sortkey)
-            
+
         if 'category' in request.GET:
             categories = request.GET['category'].split(',')
             products = products.filter(category__name__in=categories)
@@ -43,7 +43,7 @@ def all_products(request):
             if not query:
                 messages.error(request, "You didn't enter any search criteria!")
                 return redirect(reverse('products'))
-            
+
             queries = Q(name__icontains=query) | Q(description__icontains=query)
             products = products.filter(queries)
 
@@ -63,9 +63,27 @@ def product_detail(request, product_id):
     """ A view to show individual product details """
 
     product = get_object_or_404(Product, pk=product_id)
+    reviews = ProductReview.objects.filter(product=product)
+
+    # Handle adding a review
+    if request.method == 'POST' and 'review_text' in request.POST:
+        review_text = request.POST['review_text']
+        rating = int(request.POST['rating'])
+        review = ProductReview(product=product, user=request.user, review_text=review_text, rating=rating)
+        review.save()
+        messages.success(request, 'Review added successfully!')
+        return redirect(reverse('product_detail', args=[product.id]))
+
+    # Handle adding product to wishlist
+    if request.method == 'POST' and 'add_to_wishlist' in request.POST:
+        wishlist, created = Wishlist.objects.get_or_create(user=request.user)
+        wishlist.products.add(product)
+        messages.success(request, 'Product added to your wishlist!')
+        return redirect(reverse('product_detail', args=[product.id]))
 
     context = {
         'product': product,
+        'reviews': reviews,
     }
 
     return render(request, 'products/product_detail.html', context)
@@ -88,7 +106,7 @@ def add_product(request):
             messages.error(request, 'Failed to add product. Please ensure the form is valid.')
     else:
         form = ProductForm()
-        
+
     template = 'products/add_product.html'
     context = {
         'form': form,
@@ -137,3 +155,25 @@ def delete_product(request, product_id):
     product.delete()
     messages.success(request, 'Product deleted!')
     return redirect(reverse('products'))
+
+
+@login_required
+def wishlist(request):
+    """ A view to show a user's wishlist """
+
+    wishlist = get_object_or_404(Wishlist, user=request.user)
+    context = {
+        'wishlist': wishlist,
+    }
+
+    return render(request, 'products/wishlist.html', context)
+
+
+def discount_codes(request):
+    """ A view to show active discount codes """
+    discount_codes = DiscountCode.objects.filter(active=True)
+    context = {
+        'discount_codes': discount_codes,
+    }
+
+    return render(request, 'products/discount_codes.html', context)

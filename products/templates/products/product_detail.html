@@ -49,6 +49,18 @@
                         </small>
                     {% endif %}
                     <p class="mt-3">{{ product.description }}</p>
+
+                    <!-- Add to Wishlist -->
+                    {% if user.is_authenticated %}
+                        <form method="post" action="{% url 'add_to_wishlist' product.id %}">
+                            {% csrf_token %}
+                            <button type="submit" class="btn btn-outline-black rounded-0">
+                                <i class="fas fa-heart"></i> Add to Wishlist
+                            </button>
+                        </form>
+                    {% endif %}
+
+                    <!-- Add to Bag Form -->
                     <form class="form" action="{% url 'add_to_bag' product.id %}" method="POST">
                         {% csrf_token %}
                         <div class="form-row">
@@ -106,6 +118,35 @@
                             {% endwith %}
                         </div>
                     </form>
+
+                    <!-- Reviews Section -->
+                    <h3 class="mt-5">Customer Reviews:</h3>
+                    {% if reviews %}
+                        <ul>
+                            {% for review in reviews %}
+                                <li>
+                                    <strong>{{ review.user.username }}:</strong>
+                                    <p>{{ review.review_text }}</p>
+                                    <p>Rating: {{ review.rating }}/5</p>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    {% else %}
+                        <p>No reviews yet.</p>
+                    {% endif %}
+
+                    <!-- Review Form -->
+                    {% if user.is_authenticated %}
+                        <h4>Submit a Review:</h4>
+                        <form method="post">
+                            {% csrf_token %}
+                            <textarea name="review_text" required placeholder="Write your review..."></textarea>
+                            <input type="number" name="rating" min="1" max="5" required placeholder="Rating (1-5)">
+                            <button type="submit">Submit Review</button>
+                        </form>
+                    {% else %}
+                        <p>You need to be logged in to leave a review.</p>
+                    {% endif %}
                 </div>
             </div>
         </div>

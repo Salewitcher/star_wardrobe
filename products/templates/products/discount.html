@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="container">
+        <h2>Apply Discount Code</h2>
+        <form method="post" action="{% url 'apply_discount' %}">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="discount_code">Enter discount code:</label>
+                <input type="text" id="discount_code" name="discount_code" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-black">Apply</button>
+        </form>
+
+        {% if discount %}
+            <div class="alert alert-success mt-3">
+                <p>Discount applied! You saved {{ discount }}%</p>
+            </div>
+        {% elif error %}
+            <div class="alert alert-danger mt-3">
+                <p>{{ error }}</p>
+            </div>
+        {% endif %}
+    </div>
+{% endblock %}
