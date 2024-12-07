@@ -14,6 +14,9 @@ import os
 import dj_database_url
 from pathlib import Path
 
+
+if os.path.isfile("env.py"):
+    import env
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -28,7 +31,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = 'DEVELOPMENT' in os.environ
+DEBUG = False
 
 ALLOWED_HOSTS = [
     'star-wardrobe-1b58922e9a72.herokuapp.com',
@@ -58,6 +61,7 @@ INSTALLED_APPS = [
 
     # Other
     'crispy_forms',
+    'crispy_bootstrap4',
     'storages',
 ]
 
@@ -73,7 +77,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'star_wardrobe.urls'
-
+CRISPY_ALLOWED_TEMPLATE_PACKS = 'bootstrap4'
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 TEMPLATES = [
@@ -81,7 +85,7 @@ TEMPLATES = [
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
             os.path.join(BASE_DIR, 'templates'),
-            os.path.join(BASE_DIR, 'templates', 'allauth'),
+            os.path.join(BASE_DIR, 'templates', 'allauth',),
         ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -147,11 +151,6 @@ else:
             'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
        }
     }
-
-#DATABASES = {
-#     'default': dj_database_url.parse('postgres://ug4ktgo3rue:kBeBJ7nPUpn3@ep-gentle-mountain-a23bxz6h-pooler.eu-central-1.aws.neon.tech/scan_frisk_ranch_770864')
-# }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
