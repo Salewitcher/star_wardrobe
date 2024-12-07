@@ -169,6 +169,21 @@ def wishlist(request):
     return render(request, 'products/wishlist.html', context)
 
 
+@login_required
+def remove_from_wishlist(request, product_id):
+    """ Remove a product from the user's wishlist """
+    product = get_object_or_404(Product, pk=product_id)
+    wishlist, created = Wishlist.objects.get_or_create(user=request.user)
+
+    if product in wishlist.products.all():
+        wishlist.products.remove(product)
+        messages.success(request, 'Product removed from your wishlist.')
+    else:
+        messages.error(request, 'Product not found in your wishlist.')
+
+    return redirect(reverse('wishlist'))
+
+
 def discount_codes(request):
     """ A view to show active discount codes """
     discount_codes = DiscountCode.objects.filter(active=True)
