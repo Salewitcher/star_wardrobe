@@ -1,8 +1,8 @@
 from django.db import models
+from django.contrib.auth.models import User  # For linking models to users
 
 
 class Category(models.Model):
-
     class Meta:
         verbose_name_plural = 'Categories'
         
@@ -29,3 +29,42 @@ class Product(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class Wishlist(models.Model):
+    """
+    A model to represent a user's wishlist
+    """
+    user = models.OneToOneField(User, on_delete=models.CASCADE, related_name="wishlist")
+    products = models.ManyToManyField(Product, blank=True, related_name="wishlisted_by")
+
+    def __str__(self):
+        return f"{self.user.username}'s Wishlist"
+
+
+class ProductReview(models.Model):
+    """
+    A model for product reviews
+    """
+    product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name="reviews")
+    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name="reviews")
+    review_text = models.TextField()
+    rating = models.IntegerField()  # Can be a value between 1-5
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return f"Review for {self.product.name} by {self.user.username}"
+
+
+class DiscountCode(models.Model):
+    """
+    A model to represent discount codes for products
+    """
+    code = models.CharField(max_length=20, unique=True)
+    discount_percentage = models.DecimalField(max_digits=5, decimal_places=2, help_text="Enter discount as a percentage")
+    valid_from = models.DateTimeField()
+    valid_to = models.DateTimeField()
+    active = models.BooleanField(default=True)
+
+    def __str__(self):
+        return f"Discount Code: {self.code} - {self.discount_percentage}%"

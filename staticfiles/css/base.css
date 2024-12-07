@@ -1,0 +1,261 @@
+html {
+    height: 100%;
+}
+
+body {
+    background: url('/media/space_background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: calc(100vh - 164px);
+    color: #d1d1d1; /* Light gray for readability */
+    font-family: 'Lato', sans-serif; /* Modern sans-serif font */
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* Subtle glow for text */
+}
+
+/* Star Wars Logo Styling */
+.logo-font {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #ffd700; /* Gold for Star Wars vibe */
+    font-family: 'Star Jedi', sans-serif; /* Download Star Wars font from Dafont */
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.9); /* Glowing effect */
+    animation: flicker 1.5s infinite alternate; /* Flickering logo effect */
+}
+
+.main-logo-link {
+    width: fit-content;
+}
+
+/* Button Styling */
+.shop-now-button,
+.btn-black {
+    background: #000; /* Deep black for buttons */
+    color: #ffd700; /* Gold text */
+    min-width: 260px;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.7);
+    transition: all 0.3s ease-in-out;
+}
+
+.shop-now-button:hover,
+.btn-black:hover {
+    background: #ffd700;
+    color: #000;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 1);
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
+.btn-outline-black {
+    background: transparent;
+    color: #ffd700;
+    border: 1px solid #ffd700;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-outline-black:hover {
+    background: #ffd700;
+    color: #000;
+    border-color: #ffd700;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.8);
+}
+
+/* Starry Overlay */
+.overlay {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: rgba(17, 17, 17, 0.8) url('/media/stars_overlay.png') repeat;
+    z-index: -1;
+    animation: drift 20s linear infinite; /* Floating star effect */
+}
+
+/* Animations */
+@keyframes flicker {
+    0% {
+        opacity: 0.8;
+        text-shadow: 0 0 10px rgba(255, 215, 0, 0.7);
+    }
+    100% {
+        opacity: 1;
+        text-shadow: 0 0 20px rgba(255, 215, 0, 1);
+    }
+}
+
+@keyframes drift {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+/* Back-to-Top Button */
+.btt-button {
+    height: 42px;
+    width: 42px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background: #000;
+    color: #ffd700;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+    transition: transform 0.3s ease-in-out;
+}
+
+.btt-button:hover {
+    transform: scale(1.2); /* Hover effect for button */
+    box-shadow: 0 0 15px rgba(255, 215, 0, 1);
+}
+
+/* Toast Notifications */
+.custom-toast {
+    overflow: visible;
+    background: #111;
+    color: #ffd700;
+    border-radius: 3px;
+    text-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
+    animation: fade-in 0.5s ease-in-out;
+}
+
+.toast-capper {
+    height: 2px;
+    background: #ffd700;
+}
+
+/* Subtle Fade-In Animation */
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Placeholder Styling */
+input[name='q']::placeholder,
+.allauth-form-inner-content input::placeholder {
+    color: #ffd700;
+    opacity: 0.8;
+    text-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
+}
+
+/* Navbar Styling */
+@media (min-width: 992px) {
+    .fixed-top-desktop-only {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+        background: rgba(17, 17, 17, 0.8);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        animation: fade-in 0.5s ease-in-out;
+    }
+}
+
+@media (max-width: 991px) {
+    .header-container {
+        padding-top: 116px;
+    }
+
+    body {
+        height: calc(100vh - 116px);
+    }
+}
+
+/* Form Enhancements */
+.allauth-form-inner-content input {
+    border-color: #ffd700;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(255, 215, 0, 0.7);
+}
+
+.allauth-form-inner-content button,
+.allauth-form-inner-content input[type='submit'] {
+    background-color: #000;
+    color: #ffd700;
+    font-weight: bold;
+    border: 1px solid #ffd700;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.allauth-form-inner-content button:hover,
+.allauth-form-inner-content input[type='submit']:hover {
+    background-color: #ffd700;
+    color: #000;
+    border-color: #ffd700;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 1);
+}
+
+/* Product Form */
+
+/* File Input Button */
+.btn-file {
+    position: relative;
+    overflow: hidden;
+    background: #222; /* Dark background */
+    color: #ffd700; /* Golden text for Star Wars theme */
+    border: 2px solid #ffd700;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    text-transform: uppercase; /* Galactic feel */
+    font-weight: bold;
+    transition: background 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-file:hover {
+    background: #ffd700; /* Inverted hover effect */
+    color: #000;
+    box-shadow: 0 0 10px #ffd700, 0 0 20px #ffd700; /* Glow effect */
+}
+
+.btn-file input[type="file"] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 0; /* Hidden input */
+    cursor: pointer;
+}
+
+/* Custom Checkbox Styling */
+.custom-checkbox .custom-control-label::before {
+    border-radius: 0; /* Sharp edges */
+    border: 2px solid #ffd700; /* Golden border */
+    background: #222; /* Dark background */
+    width: 1.25rem;
+    height: 1.25rem;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+    background-color: #ffd700; /* Golden fill when checked */
+    border-color: #ffd700;
+    box-shadow: 0 0 10px #ffd700, 0 0 20px #ffd700; /* Glow effect */
+}
+
+/* Checkbox Hover Effect */
+.custom-checkbox .custom-control-input:not(:checked)~.custom-control-label:hover::before {
+    border-color: #fff; /* White border on hover */
+    box-shadow: 0 0 5px #ffd700;
+}
+
+/* Checkbox Icon (Optional for Star Wars theme) */
+.custom-checkbox .custom-control-input:checked~.custom-control-label::after {
+    content: '\2605'; /* Unicode Star (★) for checked state */
+    color: #000; /* Black star inside the golden background */
+    font-size: 1rem;
+    position: absolute;
+    left: 0.25rem;
+    top: 0.15rem;
+}

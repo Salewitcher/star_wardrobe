@@ -1,0 +1,95 @@
+/* General input styles with a Star Wars feel */
+.StripeElement,
+.stripe-style-input {
+  box-sizing: border-box;
+  height: 40px;
+  padding: 10px 12px;
+  border: 1px solid #ffd700; /* Gold accent for an imperial vibe */
+  border-radius: 2px; /* Slightly sharper corners */
+  background-color: #1a1a1a; /* Dark background for a space theme */
+  color: #fff; /* White text for readability */
+  box-shadow: 0 0 5px rgba(255, 215, 0, 0.5); /* Golden glow effect */
+  transition: box-shadow 300ms ease, transform 300ms ease;
+}
+
+.StripeElement--focus,
+.stripe-style-input:focus,
+.stripe-style-input:active {
+  box-shadow: 0 0 10px rgba(255, 255, 0, 0.9); /* Glowing yellow when focused */
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+.StripeElement--webkit-autofill {
+  background-color: #333 !important; /* Match Star Wars color scheme */
+}
+
+.stripe-style-input::placeholder {
+  color: #ffd700; /* Golden placeholder for a cohesive theme */
+  font-style: italic; /* Adds a futuristic touch */
+  opacity: 0.8;
+}
+
+/* Fieldset label with a hologram-style look */
+.fieldset-label {
+  position: relative;
+  right: 0.5rem;
+  color: #ffd700; /* Bright gold for emphasis */
+  text-transform: uppercase;
+  font-family: 'Star Jedi', sans-serif; /* Use a Star Wars-style font */
+  letter-spacing: 2px;
+}
+
+/* Form controls */
+#payment-form .form-control,
+#card-element {
+  color: #ffd700; /* Text matches theme */
+  border: 1px solid #ffd700; /* Highlighted border */
+  background: #1a1a1a; /* Matches inputs */
+}
+
+select,
+select option {
+    color: #000000;
+}
+
+select:invalid,
+select option[value=""] {
+    color: #aab7c4 !important;
+}
+
+/* Loading overlay styled like hyperspace */
+#loading-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.9), #000 85%);
+  z-index: 9999;
+}
+
+/* Spinner styled like a glowing star */
+.loading-spinner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  height: 100%;
+  animation: spin 1s linear infinite;
+  border: 4px solid rgba(255, 215, 0, 0.3);
+  border-top: 4px solid #ffd700;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+/* Keyframes for the spinner rotation */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
