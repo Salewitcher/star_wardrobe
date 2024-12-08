@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container text-center text-white">
+    <h1 class="display-4" style="font-family: 'Star Wars', sans-serif; color: #ffd700;">The Force Has Failed</h1>
+    <p class="lead">We can't seem to find the page you're looking for. Perhaps it was destroyed in a battle, or it’s lost in the galaxy...</p>
+    <p class="lead">Don't worry, young Padawan, you can always return to the <a href="{% url 'home' %}" class="btn btn-outline-warning">Home Page</a>.</p>
+    <img src="{% static 'media/lightsaber-glow.gif' %}" alt="Lightsaber Glow" style="width: 100%; max-width: 500px;">
+    <p>May the Force be with you!</p>
+</div>
+{% endblock %}
