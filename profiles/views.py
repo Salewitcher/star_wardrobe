@@ -1,8 +1,9 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from .models import UserProfile
 from .forms import UserProfileForm
+from .forms import NewsletterSignupForm
 
 from checkout.models import Order
 
@@ -48,3 +49,13 @@ def order_history(request, order_number):
     }
 
     return render(request, template, context)
+
+def newsletter_signup(request):
+    if request.method == 'POST':
+        form = NewsletterSignupForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('thank_you')
+    else:
+        form = NewsletterSignupForm()
+    return render(request, 'newsletter_signup.html', {'form': form})
