@@ -17,7 +17,7 @@
         <!-- Open Graph -->
         <meta property="og:title" content="Star WarDrobe - Exclusive Star Wars Merchandise">
         <meta property="og:description" content="Find the best Star Wars collectibles, clothing, toys, and lightsabers. Shop now at Star WarDrobe.">
-        <meta property="og:image" content="https://star-wardrobe-1b58922e9a72.herokuapp.com/products/">
+        <meta property="og:image" content="{% static 'favicon.jpg' %}">
         <meta property="og:url" content="https://star-wardrobe-1b58922e9a72.herokuapp.com/">
         <meta property="og:type" content="website">
 
@@ -30,6 +30,8 @@
 
         <!-- Preconnect for Performance-->
         <link rel="preconnect" href="https://cdn.jsdelivr.net">
+        <link rel="preconnect" href="https://star-wardrobe-1b58922e9a72.herokuapp.com">
+
 
         <title>Star WarDrobe{% block extra_title %}{% endblock %}</title>
     {% endblock %}

@@ -167,7 +167,14 @@ def wishlist(request):
     }
 
     return render(request, 'products/wishlist.html', context)
-
+    
+@login_required
+def add_to_wishlist(request, product_id):
+    product = get_object_or_404(Product, pk=product_id)
+    wishlist, created = Wishlist.objects.get_or_create(user=request.user)
+    wishlist.products.add(product)
+    messages.success(request, 'Product added to your wishlist!')
+    return redirect('product_detail', product_id=product.id)
 
 @login_required
 def remove_from_wishlist(request, product_id):

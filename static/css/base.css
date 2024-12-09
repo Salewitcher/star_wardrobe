@@ -203,7 +203,7 @@ footer {
 }
 
 .newsletter-link:hover {
-    color: #000; /* Change to black when hovered */
+    color: yellowgreen; /* Change to black when hovered */
     text-decoration: underline; /* Underline on hover */
     transform: scale(1.05); /* Slight zoom effect on hover */
 }
