@@ -21,9 +21,12 @@
         <meta property="og:url" content="https://star-wardrobe-1b58922e9a72.herokuapp.com/">
         <meta property="og:type" content="website">
 
+        <!-- Facebook SDK for JavaScript -->
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v13.0" nonce="d3d3sf3"></script>
+
         <!-- Favicon -->
         <link rel="icon" href="{% static 'media/favicon.jpg' %}" type="image/jpeg">
-
 
         <!-- Preconnect for Performance-->
         <link rel="preconnect" href="https://cdn.jsdelivr.net">
@@ -176,8 +179,12 @@
 
     <footer class="container text-center my-4">
         <a href="{% url 'newsletter_signup' %}" class="newsletter-link">Subscribe to our Newsletter</a>
+        <div class="social-media-links">
+            <a href="https://www.facebook.com/profile.php?id=61570223193147" target="_blank" class="facebook-link">
+                <i class="fab fa-facebook-f"></i> Follow us on Facebook
+            </a>
+        </div>
     </footer>
 
-    
   </body>
 </html>

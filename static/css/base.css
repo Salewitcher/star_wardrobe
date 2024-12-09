@@ -207,3 +207,25 @@ footer {
     text-decoration: underline; /* Underline on hover */
     transform: scale(1.05); /* Slight zoom effect on hover */
 }
+
+/* Style for the social media links */
+.social-media-links {
+    margin-top: 20px;
+}
+
+.facebook-link {
+    color: #3b5998; /* Facebook Blue */
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+    transition: color 0.3s ease;
+}
+
+.facebook-link:hover {
+    color: #8b9dc3; /* Lighter Facebook Blue */
+}
+
+.facebook-link i {
+    margin-right: 8px;
+}
