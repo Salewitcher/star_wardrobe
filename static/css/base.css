@@ -214,7 +214,7 @@ footer {
 }
 
 .facebook-link {
-    color: #3b5998; /* Facebook Blue */
+    color: yellow;
     text-decoration: none;
     font-weight: bold;
     display: inline-block;
@@ -223,7 +223,7 @@ footer {
 }
 
 .facebook-link:hover {
-    color: #8b9dc3; /* Lighter Facebook Blue */
+    color: yellowgreen; 
 }
 
 .facebook-link i {
