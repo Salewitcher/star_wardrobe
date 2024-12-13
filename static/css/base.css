@@ -7,7 +7,7 @@ body {
     background: url('/media/space_background.jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
-    color: #d1d1d1; /* Light gray for readability */
+    color: #f0f0f0; /* Light gray for readability */
     font-family: 'Lato', sans-serif; /* Modern sans-serif font */
     text-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* Subtle glow for text */
     margin: 0;
@@ -29,10 +29,15 @@ header {
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #ffd700; /* Gold for Star Wars vibe */
-    font-family: 'Star Jedi', sans-serif; /* Download Star Wars font from Dafont */
     text-shadow: 0 0 10px rgba(255, 215, 0, 0.9); /* Glowing effect */
     animation: flicker 1.5s infinite alternate; /* Flickering logo effect */
     font-size: 1.8rem; /* Slightly larger for better readability */
+
+    /* Background styling */
+    background: radial-gradient(circle, #000 60%, rgba(0, 0, 0, 0.8) 100%); /* Starry space vibe */
+    padding: 10px 20px; /* Add padding for better spacing */
+    border-radius: 10px; /* Smooth edges */
+    display: inline-block; /* Ensure the background wraps the text */
 }
 
 .main-logo-link {
@@ -203,7 +208,7 @@ footer {
 }
 
 .newsletter-link:hover {
-    color: yellowgreen; /* Change to black when hovered */
+    color: #ffd700; /* Change to black when hovered */
     text-decoration: underline; /* Underline on hover */
     transform: scale(1.05); /* Slight zoom effect on hover */
 }
@@ -223,7 +228,7 @@ footer {
 }
 
 .facebook-link:hover {
-    color: yellowgreen; 
+    color: #ffd700; 
 }
 
 .facebook-link i {
