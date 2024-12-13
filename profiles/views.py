@@ -58,4 +58,4 @@ def newsletter_signup(request):
             return redirect('thank_you')
     else:
         form = NewsletterSignupForm()
-    return render(request, 'newsletter_signup.html', {'form': form})
+    return render(request, 'profiles/newsletter_signup.html', {'form': form})
