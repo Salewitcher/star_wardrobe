@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container star-wars-container text-center">
+    <h2 class="star-wars-title text-success">Thank You!</h2>
+    <p class="star-wars-subtitle">You have successfully joined our Galactic Newsletter.</p>
+    <p class="star-wars-subtitle">The Force will guide you with exciting updates!</p>
+    <a href="{% url 'home' %}" class="btn btn-starwars mt-4">Return to Home</a>
+</div>
+{% endblock %}

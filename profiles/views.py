@@ -59,3 +59,7 @@ def newsletter_signup(request):
     else:
         form = NewsletterSignupForm()
     return render(request, 'profiles/newsletter_signup.html', {'form': form})
+
+def thank_you(request):
+    """ Renders the thank you page after newsletter signup """
+    return render(request, 'profiles/thank_you.html')
