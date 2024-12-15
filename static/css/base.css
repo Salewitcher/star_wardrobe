@@ -7,7 +7,7 @@ body {
     background: url('/media/space_background.jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
-    color: #f0f0f0; /* Light gray for readability */
+    color: #2d0a0a;
     font-family: 'Lato', sans-serif; /* Modern sans-serif font */
     text-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* Subtle glow for text */
     margin: 0;
