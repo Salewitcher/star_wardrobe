@@ -78,7 +78,7 @@ Star WarDrobe combines advanced functionality with a Star Wars-inspired design, 
 - **JavaScript** (jQuery and custom scripts)
 
 ### **Other Tools and Libraries**
-- **Cloudinary**: For media storage.
+- **AWS**: For media storage.
 - **Stripe**: For payment processing.
 - **Django-Allauth**: For authentication.
 - **Whitenoise**: For static file handling.
