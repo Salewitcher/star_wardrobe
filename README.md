@@ -14,19 +14,47 @@ Star WarDrobe combines advanced functionality with a Star Wars-inspired design, 
 1. [User Stories](#user-stories)
 2. [Features](#features)
 3. [Future Features](#future-features)
-4. [Technologies Used](#technologies-used)
-5. [Testing](#testing)
-6. [Deployment](#deployment)
-7. [Credits](#credits)
+4. [Bugs and Fixes](#bugs-and-fixes)
+5. [Technologies Used](#technologies-used)
+6. [Testing](#testing)
+7. [Deployment](#deployment)
+8. [Credits](#credits)
 
+---
+
+## **User Stories**
+
+User stories define the functionality and features of the Recipe Blog app from the end-users' perspective:
+
+- As a Developer, I want to set up Django and install the supporting libraries, so that I am ready to start development.
+- As a User, I want to have a smooth browsing experience across devices, so that I can easily navigate the site on any screen size.
+- As a User, I want to see a custom 404 error page, so that I have a better experience when encountering broken links.
+- As a Marketer, I want to implement meta tags and descriptive titles for SEO, so that our site ranks better in search results.
+- As a Developer, I want to deploy the site to Heroku early, so that I can start testing in a production-like environment.
+- As a Developer, I want to finalize deployment, so that the site is live and functional for users.
+- As a Customer, I want to browse products easily, so that I can find items to buy.
+- As a Customer, I want to add products to a shopping cart, so that I can review and purchase them.
+- As a Site Admin, I want to add meta tags and SEO-friendly content, so that the site ranks higher in search engines. 
+- As a User, I want to register and log in to the site, so that I can save my shopping cart and make purchases. 
+- As a Developer, I want to keep the secret keys secure, so that they are not exposed in the code repository.
+- As a Customer, I want to add products to a wishlist, so that I can save items for future purchase.
+- As a User, I want to easily navigate the site with a clear menu, so that I can find products and information faster.
+- As a Developer, I want to write and run tests for my application, so that I can ensure it is bug-free and functional.
+- As a Customer, I want to save my credit card details securely, so that I can make faster purchases in the future.
+- As a Customer, I want to sign up for a newsletter, so that I can get updates about new products.
+- As a Customer, I want to see links to social media pages, so that I can follow the brand online.
+- As a Customer, I want to checkout and complete the purchase, so that I can pay for the items in my cart.
+
+---
 
 ## **Features**
 
 ### **1. Core Features**
 - **User Authentication**:  
-  Users can register, log in, log out, and manage their profiles.  
+  Users can register, log in, log out, and manage their profiles.
+  ![Registration and login](docs/images/register.png)
 - **Product Management**:  
-  Products are categorized into toys, clothing, and lightsabers. Admin users can add, edit, and delete products.  
+  Products are categorized into toys, clothing, and action figures. Admin users can add, edit, and delete products.  
 - **Shopping Bag**:  
   Users can add items to their bag, adjust quantities, and view the total price.  
 - **Checkout System**:  
@@ -56,17 +84,28 @@ Star WarDrobe combines advanced functionality with a Star Wars-inspired design, 
 
 ---
 
+## **Future Features**
+
+### 1. **Social Login Options**
+- **Facebook and Googlw Integration**:
+  Integrate Facebook and Google login via allauth
+
+---
+
 ## **Bugs and Fixes**
 
 ### **Resolved Bugs**
 1. **Duplicate Index URL Error**:  
-   Fixed a conflict in URL patterns by removing the redundant `index` path in `recipes/urls.py`.
+   Fixed a conflict in URL patterns.
 
 2. **Static Files Issue on Heroku**:  
    Resolved by configuring Whitenoise for static file management and ensuring correct static file paths.
 
 3. **Search Bar Misalignment**:  
    Adjusted the Bootstrap grid system to fix alignment issues in the search bar on mobile devices.
+
+4. **File Structure**:
+   Fixed file structure by moving folders 1 directory up.
 
 ### **Known Issues**
 1. **Newsletter Signup Form**:  
@@ -94,7 +133,8 @@ Star WarDrobe combines advanced functionality with a Star Wars-inspired design, 
 ### **Other Tools and Libraries**
 - **[AWS](https://aws.amazon.com/):**: Cloud storage service used for managing media files.
 - **[Stripe](https://stripe.com/ie):**: Payment gateway for processing transactions.
-- **[Django-Allauth](https://docs.allauth.org/en/latest/):**: Authentication application for user registration, login, and account management.
+- **[Django-Allauth](https://docs.allauth.org/en/latest/):**: Authentication application for user registration, login,
+     and account management.
 - **[Whitenoise](https://whitenoise.readthedocs.io/en/stable/django.html):**: Simplifies serving static files in production.
 - **[FontAwesome](https://fontawesome.com/):**: For icons.
 - **[Google-Fonts](https://fonts.google.com/):**: For custom typography.
