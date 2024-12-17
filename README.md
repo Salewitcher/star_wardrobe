@@ -2,11 +2,23 @@
 
 ## **Project Overview**
 
-Welcome to **Star WarDrobe**, an e-commerce platform offering exclusive Star Wars merchandise, including toys, clothing, and lightsabers. This project was created as part of a Django Full-Stack Development course, adhering to agile methodologies.
+Welcome to **Star WarDrobe**, an e-commerce platform offering exclusive Star Wars merchandise, including toys, clothing, and action figures. This project was created as part of a Django Full-Stack Development course, adhering to agile methodologies.
 
 Star WarDrobe combines advanced functionality with a Star Wars-inspired design, delivering a unique shopping experience for fans of the galaxy far, far away.
 
+![Screenshot of how the app looks on different screen sizes](images/responsive-screens.png)
+
 ---
+
+## Table Of Contents:
+1. [User Stories](#user-stories)
+2. [Features](#features)
+3. [Future Features](#future-features)
+4. [Technologies Used](#technologies-used)
+5. [Testing](#testing)
+6. [Deployment](#deployment)
+7. [Credits](#credits)
+
 
 ## **Features**
 
@@ -24,9 +36,9 @@ Star WarDrobe combines advanced functionality with a Star Wars-inspired design, 
 
 ### **2. Design and Theming**
 - **Star Wars-Themed Design**:  
-  The site uses a black and gold color scheme with custom fonts, space-themed backgrounds, and a "galactic" look.  
+  The site uses a black and gold color scheme with space-themed backgrounds, and a "galactic" look.  
 - **Custom 404 Page**:  
-  A Star Wars-inspired 404 error page with lightsaber animations and fun references to the galaxy far, far away.  
+  A Star Wars-inspired 404 error page with fun references to the galaxy far, far away.  
 
 ### **3. Marketing Features**
 - **Newsletter Signup**:  
@@ -68,22 +80,27 @@ Star WarDrobe combines advanced functionality with a Star Wars-inspired design, 
 ## **Technologies Used**
 
 ### **Backend**
-- **Python 3.12**
-- **Django 4.2**
-- **SQLite** (for development)
-- **PostgreSQL** (for production)
+- **[Python](https://www.python.org/):** Programming language used for backend development.
+- **[Django](https://www.djangoproject.com/):** Python-based web framework.
+- **[SQLite](https://www.sqlite.org/):** Database used (for development).
+- **[PostgreSQL](https://www.postgresql.org/):** Database used (for production).
 
 ### **Frontend**
-- **HTML5**, **CSS3**, **Bootstrap 4.6.2**
-- **JavaScript** (jQuery and custom scripts)
+- **[HTML](https://en.wikipedia.org/wiki/HTML):** Markup language for creating web pages.
+- **[CSS](https://en.wikipedia.org/wiki/CSS):** Style sheet language for designing web pages.
+- **[Bootstrap](https://getbootstrap.com/):** CSS framework for responsive design.
+- **[JavaScript](https://en.wikipedia.org/wiki/JavaScript):** Programming language for interactive web elements.(jQuery and custom scripts)
 
 ### **Other Tools and Libraries**
-- **AWS**: For media storage.
-- **Stripe**: For payment processing.
-- **Django-Allauth**: For authentication.
-- **Whitenoise**: For static file handling.
-- **FontAwesome**: For icons.
-- **Google Fonts**: For custom typography.
+- **[AWS](https://aws.amazon.com/):**: Cloud storage service used for managing media files.
+- **[Stripe](https://stripe.com/ie):**: Payment gateway for processing transactions.
+- **[Django-Allauth](https://docs.allauth.org/en/latest/):**: Authentication application for user registration, login, and account management.
+- **[Whitenoise](https://whitenoise.readthedocs.io/en/stable/django.html):**: Simplifies serving static files in production.
+- **[FontAwesome](https://fontawesome.com/):**: For icons.
+- **[Google-Fonts](https://fonts.google.com/):**: For custom typography.
+- **[GitHub](https://github.com/):** Version control and collaboration platform.
+- **[Heroku](https://www.heroku.com/):** Platform as a service (PaaS) used for deploying the application.
+- **[Gunicorn](https://gunicorn.org/):** WSGI HTTP server used for deploying Django applications.
 
 ---
 

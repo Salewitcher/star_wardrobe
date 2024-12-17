@@ -196,8 +196,8 @@ input[name='q']:focus {
 
 /* Placeholder Styling */
 .allauth-form-inner-content input::placeholder {
-    color: #ffd700;
-    opacity: 0.8;
+    color: rgb(54, 53, 53);
+    opacity: 0.9;
     text-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
 }
 
