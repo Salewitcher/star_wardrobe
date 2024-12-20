@@ -54,13 +54,14 @@ User stories define the functionality and features of the Recipe Blog app from t
   Users can register, log in, log out, and manage their profiles.
   ![Registration and login](docs/images/register.png)
 - **Product Management**:  
-  Products are categorized into toys, clothing, and action figures. Admin users can add, edit, and delete products.  
+  Products are categorized into toys, clothing, and action figures. Admin users can add, edit, and delete products.
+  ![Product Management](docs/images/product_management.png)
 - **Shopping Bag**:  
-  Users can add items to their bag, adjust quantities, and view the total price.  
+  Users can add items to their bag, adjust quantities, and view the total price.
+  ![Shoping Bag](docs/images/bag.png)
 - **Checkout System**:  
-  Integrated with Stripe for secure payments, allowing users to place orders and receive confirmation emails.  
-- **User Profiles**:  
-  Authenticated users can view their order history and save delivery information for faster future checkouts.
+  Integrated with Stripe for secure payments, allowing users to place orders and receive confirmation emails.
+  ![Place Order](docs/images/payment.png)
 
 ### **2. Design and Theming**
 - **Star Wars-Themed Design**:  
@@ -70,9 +71,13 @@ User stories define the functionality and features of the Recipe Blog app from t
 
 ### **3. Marketing Features**
 - **Newsletter Signup**:  
-  Users can subscribe to receive updates about new products and offers.  
+  Users can subscribe to receive updates about new products and offers.
+  ![Newsletter Signup](docs/images/newsletter.png)
+  ![Newsletter Subscribed](docs/images/newsletter_1.png)
 - **Social Media Integration**:  
-  Links to a mockup Star WarDrobe Facebook page for digital marketing.  
+  Links to a mockup Star WarDrobe Facebook page for digital marketing. 
+  ![Facebook Link](docs/images/fb.png) 
+  ![Facebook Mockup](docs/images/fbpage.png)
 - **SEO Optimization**:  
   Includes metadata, keywords, and Open Graph tags for better discoverability.  
 
@@ -81,6 +86,7 @@ User stories define the functionality and features of the Recipe Blog app from t
   The project was built using an agile approach, with epics and user stories created to guide development.  
 - **Kanban Board**:  
   Tasks were tracked on a Trello board to ensure efficient project management.
+  ![Kanban Board](docs/images/kanban.png)
 
 ---
 
@@ -108,10 +114,8 @@ User stories define the functionality and features of the Recipe Blog app from t
    Fixed file structure by moving folders 1 directory up.
 
 ### **Known Issues**
-1. **Newsletter Signup Form**:  
-   The form currently does not have backend functionality for sending emails.
 
-2. **Accessibility Compliance**:  
+1. **Accessibility Compliance**:  
    The site has not been fully tested for accessibility compliance.
 
 ---
@@ -133,6 +137,7 @@ User stories define the functionality and features of the Recipe Blog app from t
 ### **Other Tools and Libraries**
 - **[AWS](https://aws.amazon.com/):**: Cloud storage service used for managing media files.
 - **[Stripe](https://stripe.com/ie):**: Payment gateway for processing transactions.
+- **[Mailchimp](https://mailchimp.com/):** Email marketing platform for managing newsletters, email campaigns, and subscriber lists.
 - **[Django-Allauth](https://docs.allauth.org/en/latest/):**: Authentication application for user registration, login,
      and account management.
 - **[Whitenoise](https://whitenoise.readthedocs.io/en/stable/django.html):**: Simplifies serving static files in production.
@@ -146,15 +151,35 @@ User stories define the functionality and features of the Recipe Blog app from t
 
 ## **Testing**
 
-### **Manual Testing**
-1. **User Authentication Flows**:  
-   Registration, login, and logout functionality tested successfully.
-   
-2. **Add-to-Bag and Checkout**:  
-   Verified that users can add products, adjust quantities, and complete the checkout process.
+### PEP8 Testing Screenshots
 
-3. **Admin Product Management**:  
-   Tested CRUD operations for managing products.
+![CI Python Linter](docs/images/pep8_1.png)
+![CI Python Linter](docs/images/pep8_2.png)
+![CI Python Linter](docs/images/pep8_3.png)
+![CI Python Linter](docs/images/pep8_4.png)
+![CI Python Linter](docs/images/pep8_5.png)
+
+### Lighthouse Testing Screenshots
+
+![Lighthouse Mobile Test](docs/images/lighthouse_mobile.png)
+![Lighthouse Desktop Test](docs/images/lighthouse_desktop.png)
+
+### Manual Testing
+
+| Feature                  | Test Performed                                                                                  | Result  |
+|--------------------------|-------------------------------------------------------------------------------------------------|---------|
+| **User Registration**    | Users can register a new account and receive an email confirmation for activation.              | Pass    |
+| **User Login**           | Registered users can log in to access their profile and dashboard.                              | Pass    |
+| **Profile Update**       | Users can update their delivery details and contact information in their profile.               | Pass    |
+| **View Products**        | Users can view all products with details like name, price, description, and image.              | Pass    |
+| **Add to Cart**          | Users can add products to the shopping cart and view updated totals.                            | Pass    |
+| **Remove from Cart**     | Users can remove items from the shopping cart, and totals update accordingly.                   | Pass    |
+| **Checkout**             | Users can enter delivery details, view order summaries, and complete purchases via Stripe.      | Pass    |
+| **Order History**        | Users can view past orders with details like order number, date, and total cost.                | Pass    |
+| **Search Functionality** | Users can search for products using keywords or filter products by category.                    | Pass    |
+| **Newsletter Signup**    | Users can enter their email address and successfully subscribe to the newsletter.               | Pass    |
+| **Social Media Links**   | Users can access the store’s Facebook page through a link in the footer.                        | Pass    |
+| **Responsiveness**       | The app layout adjusts correctly for desktop, tablet, and mobile screen sizes.                  | Pass    |
 
 ### Automated Testing
 
@@ -209,7 +234,8 @@ The app was deployed to Heroku using the following steps:
 ## **Acknowledgments**
 
 - **Code Institute**: For the Django e-commerce course and guidance.  
-- **OpenAI ChatGPT**: For brainstorming ideas and resolving technical issues.  
+- **OpenAI ChatGPT**: For brainstorming ideas and resolving technical issues.
+- **Matt Bodden**: For mentorship, guidance, and providing valuable feedback throughout the project development process.
 
 ## **Code References**
 
