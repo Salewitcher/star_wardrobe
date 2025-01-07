@@ -7,11 +7,12 @@
     --red: #ff0000;   /* Sith red */
 }
 
-/* Body Background */
-body {
-    background: radial-gradient(circle, var(--black) 50%, #1a1a1a 100%);
-    color: var(--white);
-    font-family: 'Orbitron', sans-serif; /* Star Wars-style font */
+main {
+    margin-top: 20vh;
+}
+
+p {
+    color: #aab7c4;
 }
 
 /* Order History Section */
@@ -25,13 +26,19 @@ body {
     color: var(--gold);
 }
 
+/* Table Header Styling */
+.order-history th {
+    color: var(--gray); /* Set placeholder color */
+    font-size: 1rem;
+    font-weight: normal;
+}
+
 /* Profile Update Form */
 #profile-update-form {
     background-color: rgba(255, 255, 255, 0.1); /* Subtle transparency */
     border: 1px solid var(--gold);
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0px 0px 10px var(--gold);
 }
 
 #profile-update-form .form-control {
@@ -67,12 +74,11 @@ body {
     border-radius: 5px;
     padding: 10px 20px;
     text-transform: uppercase;
-    transition: transform 0.2s, box-shadow 0.2s;
+    transition: transform 0.2s;
 }
 
 #profile-update-form button[type="submit"]:hover {
     transform: scale(1.05);
-    box-shadow: 0px 0px 10px var(--gold);
     background-color: var(--red); /* Sith vibes on hover */
     color: var(--white);
 }
@@ -95,15 +101,3 @@ body {
     background: var(--red);
 }
 
-/* Add Star Warsy Decorations */
-body:after {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url('https://example.com/starry-background.png') repeat;
-    opacity: 0.2;
-    z-index: -1;
-}

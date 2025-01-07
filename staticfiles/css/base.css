@@ -1,3 +1,4 @@
+/* Base Styles */
 html {
     height: 100%;
 }
@@ -6,23 +7,89 @@ body {
     background: url('/media/space_background.jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
-    color: #d1d1d1; /* Light gray for readability */
+    color: #2d0a0a;
     font-family: 'Lato', sans-serif; /* Modern sans-serif font */
     text-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* Subtle glow for text */
+    margin: 0;
 }
+
+/* Header Styling */
+header {
+    color: #ffd700;
+    padding: 15px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
+h1 {
+    margin-top: 10rem;
+}
+
+.tdcolor {
+    color: #ffd700;
+}
+
+.mtlower {
+    margin-top: 15rem;
+}
+
+.my-0 {
+    background-color: #1a1a1a; /* Dark background for contrast */
+    color: #ffd700;
+    border-radius: 10px;
+}
+
+a#user-options,
+a.text-black.nav-link,
+.text-center { 
+    color: #ffd700; 
+}
+
 
 /* Star Wars Logo Styling */
 .logo-font {
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #ffd700; /* Gold for Star Wars vibe */
-    font-family: 'Star Jedi', sans-serif; /* Download Star Wars font from Dafont */
     text-shadow: 0 0 10px rgba(255, 215, 0, 0.9); /* Glowing effect */
     animation: flicker 1.5s infinite alternate; /* Flickering logo effect */
+    font-size: 1.8rem; /* Slightly larger for better readability */
+
+    /* Background styling */
+    background: radial-gradient(circle, #000 60%, rgba(0, 0, 0, 0.8) 100%); /* Starry space vibe */
+    padding: 10px 20px; /* Add padding for better spacing */
+    border-radius: 10px; /* Smooth edges */
+    display: inline-block; /* Ensure the background wraps the text */
 }
 
 .main-logo-link {
     width: fit-content;
+}
+
+/* Search Bar */
+input[name='q'] {
+    background-color: #333333; /* Dark search bar background */
+    color: #ffd700; /* Gold text color */
+    border: 1px solid #ffd700;
+    border-radius: 5px;
+    padding: 8px 12px;
+    width: 300px;
+    box-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+input[name='q']::placeholder {
+    color: #ffd700;
+    opacity: 0.8;
+    text-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
+}
+
+input[name='q']:focus {
+    border-color: #fff; /* White border for focus state */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    outline: none;
 }
 
 /* Button Styling */
@@ -127,135 +194,178 @@ body {
     background: #ffd700;
 }
 
-/* Subtle Fade-In Animation */
-@keyframes fade-in {
-    0% {
-        opacity: 0;
-        transform: translateY(-10px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
 /* Placeholder Styling */
-input[name='q']::placeholder,
 .allauth-form-inner-content input::placeholder {
-    color: #ffd700;
-    opacity: 0.8;
+    color: rgb(54, 53, 53);
+    opacity: 0.9;
     text-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
 }
 
-/* Navbar Styling */
+/* Navbar Fixed for Desktop */
 @media (min-width: 992px) {
     .fixed-top-desktop-only {
         position: fixed;
         top: 0;
-        right: 0;
         left: 0;
-        z-index: 1030;
-        background: rgba(17, 17, 17, 0.8);
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        right: 0;
+        background: rgba(17, 17, 17, 0.9); /* Slightly transparent */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
         animation: fade-in 0.5s ease-in-out;
     }
 }
 
-@media (max-width: 991px) {
-    .header-container {
-        padding-top: 116px;
-    }
-
-    body {
-        height: calc(100vh - 116px);
-    }
-}
-
-/* Form Enhancements */
-.allauth-form-inner-content input {
-    border-color: #ffd700;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(255, 215, 0, 0.7);
-}
-
-.allauth-form-inner-content button,
-.allauth-form-inner-content input[type='submit'] {
-    background-color: #000;
+/* Footer */
+footer {
+    background-color: #1a1a1a;
     color: #ffd700;
-    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ffd700;
+}
+
+/* base.css */
+.newsletter-link {
+    color: #ffd700; /* Gold color for the link */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold text */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition effects */
+}
+
+.newsletter-link:hover {
+    color: #ffd700; /* Change to black when hovered */
+    text-decoration: underline; /* Underline on hover */
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Newsletter Section Styles */
+
+.newsletter-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh; 
+    margin-top: 25vh; 
+}
+
+.newsletter-box {
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+    color: #ffd700; /* Star Wars gold */
+    padding: 2rem;
+    border: 2px solid #ffd700;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.7);
+    max-width: 500px;
+    width: 90%;
+}
+
+.newsletter-title {
+    font-family: 'Lato', Arial, sans-serif; /* Star Wars-style font */
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 10px #ffd700;
+}
+
+.newsletter-text {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+}
+
+.newsletter-form input[type="text"],
+.newsletter-form input[type="email"],
+.newsletter-form textarea {
+    width: 100%;
+    padding: 0.7rem;
+    margin-bottom: 1rem;
     border: 1px solid #ffd700;
     border-radius: 5px;
-    transition: all 0.3s ease-in-out;
+    background-color: #000;
+    color: #ffd700;
 }
 
-.allauth-form-inner-content button:hover,
-.allauth-form-inner-content input[type='submit']:hover {
+.newsletter-form input::placeholder {
+    color: #aaa;
+}
+
+.btn-galactic {
     background-color: #ffd700;
     color: #000;
-    border-color: #ffd700;
-    box-shadow: 0 0 10px rgba(255, 215, 0, 1);
-}
-
-/* Product Form */
-
-/* File Input Button */
-.btn-file {
-    position: relative;
-    overflow: hidden;
-    background: #222; /* Dark background */
-    color: #ffd700; /* Golden text for Star Wars theme */
-    border: 2px solid #ffd700;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-    text-transform: uppercase; /* Galactic feel */
     font-weight: bold;
-    transition: background 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
-}
-
-.btn-file:hover {
-    background: #ffd700; /* Inverted hover effect */
-    color: #000;
-    box-shadow: 0 0 10px #ffd700, 0 0 20px #ffd700; /* Glow effect */
-}
-
-.btn-file input[type="file"] {
-    position: absolute;
-    top: 0;
-    right: 0;
-    min-width: 100%;
-    min-height: 100%;
-    opacity: 0; /* Hidden input */
+    text-transform: uppercase;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.7);
+    transition: all 0.3s ease;
 }
 
-/* Custom Checkbox Styling */
-.custom-checkbox .custom-control-label::before {
-    border-radius: 0; /* Sharp edges */
-    border: 2px solid #ffd700; /* Golden border */
-    background: #222; /* Dark background */
-    width: 1.25rem;
-    height: 1.25rem;
-    transition: background 0.3s ease, box-shadow 0.3s ease;
+.btn-galactic:hover {
+    background-color: #ffcc00;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 1);
+    transform: scale(1.05);
 }
 
-.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
-    background-color: #ffd700; /* Golden fill when checked */
-    border-color: #ffd700;
-    box-shadow: 0 0 10px #ffd700, 0 0 20px #ffd700; /* Glow effect */
+/* Newsletter Thank you page Styles */
+
+.star-wars-container {
+    justify-content: center;
+    align-items: center;
+    height: 60vh; 
+    margin-top: 25vh;
 }
 
-/* Checkbox Hover Effect */
-.custom-checkbox .custom-control-input:not(:checked)~.custom-control-label:hover::before {
-    border-color: #fff; /* White border on hover */
-    box-shadow: 0 0 5px #ffd700;
+.star-wars-title {
+    margin-top: 15rem;
+    font-size: 3rem;
+    color: #ffd700;
+    text-shadow: 0 0 15px rgba(255, 215, 0, 1);
 }
 
-/* Checkbox Icon (Optional for Star Wars theme) */
-.custom-checkbox .custom-control-input:checked~.custom-control-label::after {
-    content: '\2605'; /* Unicode Star (★) for checked state */
-    color: #000; /* Black star inside the golden background */
-    font-size: 1rem;
-    position: absolute;
-    left: 0.25rem;
-    top: 0.15rem;
+.star-wars-subtitle {
+    font-size: 1.5rem;
+    color: #ffd700;
+    margin-top: 20px;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+.btn-starwars {
+    background-color: #000;
+    color: #ffd700;
+    border-radius: 5px;
+    padding: 12px 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.7);
+    transition: all 0.3s ease;
+}
+
+.btn-starwars:hover {
+    background-color: #ffd700;
+    color: #000;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 1);
+    transform: scale(1.05);
+}
+
+/* Style for the social media links */
+.social-media-links {
+    margin-top: 20px;
+}
+
+.facebook-link {
+    color: #ffd700;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+    transition: color 0.3s ease;
+}
+
+.facebook-link:hover {
+    color: #ffd700; 
+}
+
+.facebook-link i {
+    margin-right: 8px;
 }
