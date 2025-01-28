@@ -5,7 +5,7 @@ from django.contrib.auth.models import User  # For linking models to users
 class Category(models.Model):
     class Meta:
         verbose_name_plural = 'Categories'
-        
+
     name = models.CharField(max_length=254)
     friendly_name = models.CharField(max_length=254, null=True, blank=True)
 
@@ -26,6 +26,7 @@ class Product(models.Model):
     rating = models.DecimalField(max_digits=6, decimal_places=2, null=True, blank=True)
     image_url = models.URLField(max_length=1024, null=True, blank=True)
     image = models.ImageField(null=True, blank=True)
+    updated_at = models.DateTimeField(auto_now=True)  # Automatically updated on save
 
     def __str__(self):
         return self.name
