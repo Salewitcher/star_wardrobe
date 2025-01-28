@@ -10,6 +10,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = False
+X_FRAME_OPTIONS = 'ALLOWALL'
 
 ALLOWED_HOSTS = [
     'star-wardrobe-1b58922e9a72.herokuapp.com',
