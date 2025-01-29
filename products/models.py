@@ -27,7 +27,7 @@ class Product(models.Model):
     rating = models.DecimalField(max_digits=6, decimal_places=2, null=True, blank=True)
     image_url = models.URLField(max_length=1024, null=True, blank=True)
     image = models.ImageField(null=True, blank=True)
-    updated_at = models.DateTimeField(auto_now=True)  # Automatically updated on save
+    updated_at = models.DateTimeField(auto_now=True, null=True, blank=True)  # Automatically updated on save
 
     def __str__(self):
         return self.name
