@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /accounts/
+Disallow: /bag/
+Sitemap: https://star-wardrobe-1b58922e9a72.herokuapp.com/sitemap.xml

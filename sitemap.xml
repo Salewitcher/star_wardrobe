@@ -1,0 +1,717 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/accounts/signup/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/accounts/login/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/bag/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/?sort=price&amp;direction=asc</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/?sort=rating&amp;direction=desc</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/?sort=category&amp;direction=asc</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/?category=jedi_robes</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/?category=sith_jeans</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/?category=galactic_shirts</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/?category=jedi_robes,sith_jeans,galactic_shirts</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/?category=action_figures</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/?category=lego_sets</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/?category=plush_toys</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/?category=collectibles</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/?category=action_figures,lego_sets,plush_toys,collectibles</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/?category=new_arrivals</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/?category=deals</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/?category=clearance</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/?category=new_arrivals,deals,clearance</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/profile/newsletter-signup/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/accounts/password/reset/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/288/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/187/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/264/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/270/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/266/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/262/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/274/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/240/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/265/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/276/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/260/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/210/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/287/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/191/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/283/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/271/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/267/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/281/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/241/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/247/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/272/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/179/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/269/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/290/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/263/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/259/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/277/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/275/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/280/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/213/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/245/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/249/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/291/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/268/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/186/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/279/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/273/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/261/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/285/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/282/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/224/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/181/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/284/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/244/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/292/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/278/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/226/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/250/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/239/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/207/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/246/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/209/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/221/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/251/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/286/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/205/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/212/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/215/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/228/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/206/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/289/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/183/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/243/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/216/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/219/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/190/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/233/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/254/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/180/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/176/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/208/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/214/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/218/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/225/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/222/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/175/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/217/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/188/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/184/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/234/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/256/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/211/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/232/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/238/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/242/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/223/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/182/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/192/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/237/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/253/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/235/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/185/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/220/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/178/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/255/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/257/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/227/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/177/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/258/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/231/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/230/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/189/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/193/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/236/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/194/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/229/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/196/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/248/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/199/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/197/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/203/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/204/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/252/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/195/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/201/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/198/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/202/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://star-wardrobe-1b58922e9a72.herokuapp.com/products/200/</loc>
+  <lastmod>2025-01-30T11:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>
