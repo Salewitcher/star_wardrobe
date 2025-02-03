@@ -153,6 +153,7 @@ User stories define the functionality and features of the Recipe Blog app from t
 
 ### PEP8 Testing Screenshots
 
+### **Note :** Much of the code was left as it is because it got broken
 ![CI Python Linter](docs/images/pep8_1.png)
 ![CI Python Linter](docs/images/pep8_2.png)
 ![CI Python Linter](docs/images/pep8_3.png)
