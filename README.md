@@ -6,7 +6,7 @@ Welcome to **Star WarDrobe**, an e-commerce platform offering exclusive Star War
 
 Star WarDrobe combines advanced functionality with a Star Wars-inspired design, delivering a unique shopping experience for fans of the galaxy far, far away.
 
-![Screenshot of how the app looks on different screen sizes](images/responsive-screens.png)
+![Screenshot of how the app looks on different screen sizes](docs/images/responsive-screens.png)
 
 ---
 
@@ -24,7 +24,7 @@ Star WarDrobe combines advanced functionality with a Star Wars-inspired design, 
 
 ## **User Stories**
 
-User stories define the functionality and features of the Recipe Blog app from the end-users' perspective:
+User stories define the functionality and features of the Star WarDrobe from the end-users' perspective:
 
 - As a Developer, I want to set up Django and install the supporting libraries, so that I am ready to start development.
 - As a User, I want to have a smooth browsing experience across devices, so that I can easily navigate the site on any screen size.
