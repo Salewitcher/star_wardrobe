@@ -6,6 +6,22 @@ Welcome to **Star WarDrobe**, an e-commerce platform offering exclusive Star War
 
 Star WarDrobe combines advanced functionality with a Star Wars-inspired design, delivering a unique shopping experience for fans of the galaxy far, far away.
 
+**E-Commerce Business Model**
+
+The e-commerce platform operates on a B2C (Business-to-Consumer) model, selling officially licensed Star Wars merchandise directly to fans and collectors. The target audience includes Star Wars enthusiasts of all ages, from casual fans to dedicated collectors. 
+
+**Revenue Streams:**
+- Product sales, including toys, apparel, and clothing.
+- Limited-edition and exclusive merchandise targeting collectors.
+- Cross-selling opportunities through bundles and discounts.
+
+**Value Proposition:**
+- Authentic Star Wars merchandise guaranteed for quality and originality.
+- A seamless user experience with intuitive navigation, secure checkout, and responsive design.
+- Exclusive deals and new product launches announced via newsletters and social media.
+
+This business model emphasizes a fan-first approach by building trust and creating an enjoyable shopping experience.
+
 ![Screenshot of how the app looks on different screen sizes](docs/images/responsive-screens.png)
 
 ---
