@@ -29,12 +29,13 @@ This business model emphasizes a fan-first approach by building trust and creati
 ## Table Of Contents:
 1. [User Stories](#user-stories)
 2. [Features](#features)
-3. [Future Features](#future-features)
-4. [Bugs and Fixes](#bugs-and-fixes)
-5. [Technologies Used](#technologies-used)
-6. [Testing](#testing)
-7. [Deployment](#deployment)
-8. [Credits](#credits)
+3. [Wireframes and Mockups](#wireframes-and-mockups)
+4. [Future Features](#future-features)
+5. [Bugs and Fixes](#bugs-and-fixes)
+6. [Technologies Used](#technologies-used)
+7. [Testing](#testing)
+8. [Deployment](#deployment)
+9. [Credits](#credits)
 
 ---
 
@@ -103,6 +104,96 @@ User stories define the functionality and features of the Star WarDrobe from the
 - **Kanban Board**:  
   Tasks were tracked on a Trello board to ensure efficient project management.
   ![Kanban Board](docs/images/kanban.png)
+
+---
+
+## **Wireframes and Mockups**
+
+The following wireframes were created during the design phase to visualize the layout and structure of the website.
+
+### **Homepage**
+
++----------------------------------------------------+
+| STAR WAR DROBE        [ Search Bar ]  [ Cart $0 ] |
++----------------------------------------------------+
+| [ ALL PRODUCTS ] [ REBEL APPAREL ] [ STAR WARS TOYS ] [ SPECIAL OFFERS ] |
++----------------------------------------------------+
+| FREE DELIVERY ON ORDERS OVER $50!                 |
++----------------------------------------------------+
+|     THE NEW COLLECTIONS ARE HERE                  |
+|    +----------------------------------+           |
+|    |         [ SHOP NOW ]             |           |
+|    +----------------------------------+           |
+|                                                  |
+|          [ Darth Vader Hero Image ]             |
+|                                                  |
++----------------------------------------------------+
+| [ Subscribe to our Newsletter ]                  |
+| [ Follow us on Facebook ]                        |
++----------------------------------------------------+
+
+
+The homepage was designed to showcase featured products, a search bar, and a navigation menu for easy access.
+
+### **Product Page**
+
++----------------------------------------------------+
+| STAR WAR DROBE       [Search Bar]   My Account $0 |
++----------------------------------------------------+
+| [ALL PRODUCTS]  [REBEL APPAREL]  [STAR WARS TOYS] |
+|                 [SPECIAL OFFERS]                  |
++----------------------------------------------------+
+|      FREE DELIVERY ON ORDERS OVER $50!           |
++----------------------------------------------------+
+
++----------------------------------------------------+
+| [ Darth Vader Action Figure ]  [ Obi-Wan Figure ] |
+|        $77.00                      $67.00        |
+| [ Yoda Figure ]               [ Obi-Wan Cloak ]  |
+|    $46.00                          $47.00        |
++----------------------------------------------------+
+| Sort by: [ Dropdown ]                             |
++----------------------------------------------------+
+
+
+
+The product page focuses on displaying a detailed view of each item with an "Add to Cart" button.
+
+### **Cart Page**
+
++------------------------------------------------------+
+|                   SHOPPING BAG                       |
++------------------------------------------------------+
+| Product Info       | Price   | Qty   | Subtotal     |
++------------------------------------------------------+
+| [Darth Vader Img]  | $77.00  | [ - 1 + ] | $77.00 |
+| Darth Vader Action Figure                            |
+| Size: N/A | SKU: ACT002                              |
+| Update | Remove                                     |
++------------------------------------------------------+
+| [Yoda Img]        | $46.00  | [ - 1 + ] | $46.00  |
+| Yoda Action Figure                                  |
+| Size: N/A | SKU: ACT005                              |
+| Update | Remove                                     |
++------------------------------------------------------+
+| Bag Total: $123.00                                  |
+| Delivery: $0.00                                     |
+| Grand Total: $123.00                                |
++------------------------------------------------------+
+| [ ◀ KEEP SHOPPING ]   [ SECURE CHECKOUT 🔒 ]         |
++------------------------------------------------------+
+| Subscribe to our Newsletter                         |
+| Follow us on Facebook                               |
++------------------------------------------------------+
+
+
+The cart page provides a summary of the user's selected items and allows them to proceed to checkout.
+
+### **Checkout Page**
+![Checkout Page Wireframe](media/checkout-page-wireframe.png)
+
+The checkout page includes fields for delivery details and payment information, with a final order summary.
+
 
 ---
 
