@@ -220,10 +220,8 @@ The checkout page includes fields for delivery details and payment information, 
 4. **File Structure**:
    Fixed file structure by moving folders 1 directory up.
 
-### **Known Issues**
-
-1. **Accessibility Compliance**:  
-   The site has not been fully tested for accessibility compliance.
+5. **Stripe bad API Key**
+   Rolled new Stripe secret key and insert in Config Vars on Heroku.
 
 ---
 
