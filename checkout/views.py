@@ -2,6 +2,8 @@ from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpR
 from django.views.decorators.http import require_POST
 from django.contrib import messages
 from django.conf import settings
+from django.core.mail import send_mail
+from django.template.loader import render_to_string
 
 from .forms import OrderForm
 from .models import Order, OrderLineItem
@@ -149,11 +151,10 @@ def checkout_success(request, order_number):
 
     if request.user.is_authenticated:
         profile = UserProfile.objects.get(user=request.user)
-        # Attach the user's profile to the order
         order.user_profile = profile
         order.save()
 
-        # Save the user's info
+        # Save user info if requested
         if save_info:
             profile_data = {
                 'default_phone_number': order.phone_number,
@@ -168,16 +169,28 @@ def checkout_success(request, order_number):
             if user_profile_form.is_valid():
                 user_profile_form.save()
 
+    # Send Order Confirmation Email
+    subject = f"Order Confirmation - {order_number}"
+    message_plain = render_to_string(
+        'checkout/confirmation_email_body.txt',  # No .html, it's a plain text file
+        {'order': order, 'contact_email': settings.DEFAULT_FROM_EMAIL}
+    )
+
+    send_mail(
+        subject,
+        message_plain,  # Plain text email
+        settings.DEFAULT_FROM_EMAIL,  # Sender
+        [order.email],  # Recipient
+    )
+
     messages.success(request, f'Order successfully processed! \
         Your order number is {order_number}. A confirmation \
-        email will be sent to {order.email}.')
+        email has been sent to {order.email}.')
 
     if 'bag' in request.session:
         del request.session['bag']
 
     template = 'checkout/checkout_success.html'
-    context = {
-        'order': order,
-    }
+    context = {'order': order}
 
     return render(request, template, context)
