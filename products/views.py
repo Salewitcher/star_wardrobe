@@ -198,4 +198,4 @@ def discount_codes(request):
         'discount_codes': discount_codes,
     }
 
-    return render(request, 'products/discount_codes.html', context)
+    return render(request, 'products/discount.html', context)

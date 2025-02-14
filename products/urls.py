@@ -16,5 +16,5 @@ urlpatterns = [
     path('wishlist/add/<int:product_id>/', views.add_to_wishlist, name='add_to_wishlist'),
 
     # Discount Code URLs
-    path('discount_codes/', views.discount_codes, name='discount_codes'),
+    path('discount/', views.discount_codes, name='discount_codes'),
 ]

@@ -45,7 +45,7 @@ h1 {
 }
 
 .mtlower {
-    margin-top: 15rem;
+    margin-top: 17rem;
 }
 
 .my-0 {
@@ -224,6 +224,10 @@ input[name='q']:focus {
         background: rgba(17, 17, 17, 0.9); /* Slightly transparent */
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
         animation: fade-in 0.5s ease-in-out;
+    }
+
+    .mtlower {
+        margin-top: 20rem;
     }
 }
 
