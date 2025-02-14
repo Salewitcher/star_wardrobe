@@ -1,6 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User  # For linking models to users
-from django.urls import reverse
+from django.db.models import Avg
+from django.core.validators import MinValueValidator
 
 
 class Category(models.Model):
@@ -23,8 +24,12 @@ class Product(models.Model):
     name = models.CharField(max_length=254)
     description = models.TextField()
     has_sizes = models.BooleanField(default=False, null=True, blank=True)
-    price = models.DecimalField(max_digits=6, decimal_places=2)
-    rating = models.DecimalField(max_digits=6, decimal_places=2, null=True, blank=True)
+    price = models.DecimalField(
+        max_digits=6, decimal_places=2, validators=[MinValueValidator(0)]
+    )
+    rating = models.DecimalField(
+        max_digits=6, decimal_places=2, null=True, blank=True, validators=[MinValueValidator(0)]
+    )
     image_url = models.URLField(max_length=1024, null=True, blank=True)
     image = models.ImageField(null=True, blank=True)
 
@@ -50,11 +55,33 @@ class ProductReview(models.Model):
     product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name="reviews")
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name="reviews")
     review_text = models.TextField()
-    rating = models.IntegerField()  # Can be a value between 1-5
+    rating = models.PositiveIntegerField()  # Ensures rating is between 1-5
     created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
         return f"Review for {self.product.name} by {self.user.username}"
+    
+    def save(self, *args, **kwargs):
+        """
+        Override save method to update product rating
+        """
+        super().save(*args, **kwargs)
+        self.update_product_rating()
+
+    def delete(self, *args, **kwargs):
+        """
+        Override delete method to update product rating when a review is removed
+        """
+        super().delete(*args, **kwargs)
+        self.update_product_rating()
+
+    def update_product_rating(self):
+        """
+        Updates the product's average rating based on existing reviews
+        """
+        avg_rating = self.product.reviews.aggregate(Avg("rating"))["rating__avg"]
+        self.product.rating = round(avg_rating, 2) if avg_rating else None
+        self.product.save()
 
 
 class DiscountCode(models.Model):
