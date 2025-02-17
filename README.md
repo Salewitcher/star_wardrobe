@@ -392,14 +392,13 @@ Automated tests were created using Django’s built-in test framework. The tests
 #### **📌 Running Automated Tests**  
 To execute the automated tests, run the following command in the terminal:  
 
-```bash
 python manage.py test
 
 ✅ All tests passed successfully! 🚀
 📌 Test Results Screenshot
 Below is a screenshot of the automated test results:
-![Django Test Results](docs/images/django_tests.png)
 
+![Django Test Results](docs/images/django_tests.png)
 
 ---
 
