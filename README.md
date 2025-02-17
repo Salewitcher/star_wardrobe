@@ -805,6 +805,7 @@ Following these steps ensures that Django properly integrates with AWS S3 for st
 - **Code Institute**: For the Django e-commerce course and guidance.  
 - **OpenAI ChatGPT**: For brainstorming ideas and resolving technical issues.
 - **Matt Bodden**: For mentorship, guidance, and providing valuable feedback throughout the project development process.
+- [Zilvaro](https://github.com/Zilvaro) : For README.md Deployment guide
 
 ## **Code References**
 
