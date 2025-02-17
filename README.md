@@ -369,12 +369,37 @@ The checkout page includes fields for delivery details and payment information, 
 | **Social Media Links**   | Users can access the store’s Facebook page through a link in the footer.                        | Pass    |
 | **Responsiveness**       | The app layout adjusts correctly for desktop, tablet, and mobile screen sizes.                  | Pass    |
 
-### Automated Testing
+### **Automated Testing**  
+Automated tests were created using Django’s built-in test framework. The tests include:  
 
-Automated tests were created using Django's test framework:
+#### **📌 Models Testing**  
+- Ensures that product and category models store and retrieve data correctly.  
+- Validates that default values and field constraints are properly enforced.  
 
-- **Views Testing:** Confirm that the correct templates are rendered and HTTP responses are as expected.
-- **Models Testing:** Validate that models behave as expected, including default values and field constraints.
+#### **📌 Views Testing**  
+- Confirms that pages return the correct HTTP response (200 OK or 302 Redirect).  
+- Verifies that views render the expected templates.  
+- Ensures that user authentication is required for certain views.  
+
+#### **📌 Forms Testing**  
+- Validates that forms correctly process and sanitize user inputs.  
+- Checks if form submissions with invalid data return errors as expected.  
+
+#### **📌 URLs Testing**  
+- Ensures that URLs correctly resolve to their respective views.  
+- Confirms that protected routes require authentication.  
+
+#### **📌 Running Automated Tests**  
+To execute the automated tests, run the following command in the terminal:  
+
+```bash
+python manage.py test
+
+✅ All tests passed successfully! 🚀
+📌 Test Results Screenshot
+Below is a screenshot of the automated test results:
+![Django Test Results](docs/images/django_tests.png)
+
 
 ---
 

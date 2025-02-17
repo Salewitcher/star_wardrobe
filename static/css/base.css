@@ -86,6 +86,10 @@ a.text-black.nav-link,
     color: #ffd700; 
 }
 
+.black:hover .fas {
+    color: black;
+    transition: color 0.3s ease-in-out;
+}
 
 /* Star Wars Logo Styling */
 .logo-font {
