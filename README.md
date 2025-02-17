@@ -615,6 +615,179 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 DEBUG = 'DEVELOPMENT' in os.environ
 ```
 
+# AWS Bucket Creation and Integration
+
+All static and media files in this project are stored in an Amazon Web Services (AWS) S3 bucket, a cloud-based storage service. Follow these steps to create and configure your own bucket and integrate it with Django.
+
+---
+
+## **1. Create an AWS S3 Bucket**
+
+1. **Sign in to AWS**
+   - Go to [AWS](https://aws.amazon.com/) and create an account or log in.
+   
+2. **Create an S3 Bucket**
+   - Navigate to the AWS Management Console and search for "S3."
+   - Click **Create Bucket**.
+   - Choose a **unique name** (preferably matching your Heroku app name) and select the region closest to you.
+
+3. **Configure Bucket Settings**
+   - Under **Object Ownership**, select **ACLs enabled** and **Bucket Owner Preferred**.
+   - **Uncheck** "Block all public access".
+   - Check "I acknowledge that the current settings might result in this bucket and the objects within becoming public".
+   - Click **Create Bucket**.
+
+4. **Enable Static Website Hosting**
+   - Click on your bucket and go to the **Properties** tab.
+   - Scroll to **Static Website Hosting**, click **Edit**, and enable it.
+   - Select **Host a Static Website**.
+   - Set the **Index document** to `index.html` and the **Error document** to `error.html`.
+   - Click **Save Changes**.
+
+5. **Configure Permissions**
+   - **Set CORS Configuration:**
+     - Go to the **Permissions** tab, scroll to **CORS Configuration**, and click **Edit**.
+     - Add the following JSON:
+       ```json
+       [
+          {
+             "AllowedHeaders": ["Authorization"],
+             "AllowedMethods": ["GET"],
+             "AllowedOrigins": ["*"],
+             "ExposeHeaders": []
+          }
+       ]
+       ```
+     - Click **Save Changes**.
+   
+   - **Set Bucket Policy:**
+     - Under **Bucket Policy**, click **Edit**, then open **Policy Generator**.
+     - Set:
+       - **Type of Policy:** S3 Bucket Policy
+       - **Effect:** Allow
+       - **Principal:** `*`
+       - **Actions:** `s3:GetObject`
+       - **ARN:** Use your bucket ARN (found in Bucket Policy settings).
+     - Click **Add Statement** → **Generate Policy**.
+     - Copy the generated policy and paste it into the **Bucket Policy Editor**.
+     - Modify the `Resource` key as:
+       ```json
+       "Resource": "arn:aws:s3:::YOUR_BUCKET_NAME/*"
+       ```
+     - Click **Save**.
+   
+   - **Modify ACL (Access Control List):**
+     - Scroll to **Access Control List (ACL)**.
+     - Click **Edit** and enable **List** for "Everyone (public access)".
+     - Accept the warning and save changes.
+
+---
+
+## **2. Create an IAM User for S3 Access**
+
+1. **Navigate to IAM (Identity and Access Management)**
+   - Open AWS Console → Search for "IAM" → Open it.
+
+2. **Create a User Group**
+   - Go to **User Groups** → Click **Create Group**.
+   - Enter a name (e.g., `manage-starwardrobe`) → Click **Create Group**.
+
+3. **Create an Access Policy**
+   - Go to **Policies** → Click **Create Policy**.
+   - Select **JSON** and import the **AmazonS3FullAccess** policy.
+   - Modify the policy to limit access to your specific bucket:
+     ```json
+     "Resource": [
+        "arn:aws:s3:::YOUR_BUCKET_NAME",
+        "arn:aws:s3:::YOUR_BUCKET_NAME/*"
+     ]
+     ```
+   - Click **Next: Tags** → **Next: Review**.
+   - Name the policy and click **Create Policy**.
+
+4. **Attach Policy to the User Group**
+   - Go to **User Groups**, select your group.
+   - Navigate to **Permissions** → **Attach Policies**.
+   - Select the policy created earlier and click **Add Permissions**.
+
+5. **Create an IAM User**
+   - Go to **Users** → Click **Add Users**.
+   - Set a username and **enable Programmatic Access**.
+   - Click **Next: Permissions**, attach the user to the group created earlier.
+   - Click **Create User** and **Download the CSV file** (contains AWS credentials).
+
+---
+
+## **3. Connect Django to AWS S3**
+
+### **Install Dependencies**
+```bash
+pip3 install boto3 django-storages
+pip3 freeze > requirements.txt
+```
+
+### **Update Django Settings**
+1. **Add `storages` to `INSTALLED_APPS` in `settings.py`**
+
+2. **Configure AWS Storage (in `settings.py`)**
+```python
+if 'USE_AWS' in os.environ:
+    # Cache control
+    AWS_S3_OBJECT_PARAMETERS = {
+        'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
+        'CacheControl': 'max-age=94608000',
+    }
+
+    # Bucket Config
+    AWS_STORAGE_BUCKET_NAME = 'YOUR_BUCKET_NAME'
+    AWS_S3_REGION_NAME = 'YOUR_REGION'
+    AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
+    AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
+    AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
+
+    # Static & Media files
+    STATICFILES_STORAGE = 'custom_storages.StaticStorage'
+    STATICFILES_LOCATION = 'static'
+    DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
+    MEDIAFILES_LOCATION = 'media'
+
+    # Override static & media URLs
+    STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
+    MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
+```
+
+3. **Set Config Vars on Heroku**
+   - Navigate to **Settings** → **Reveal Config Vars**.
+   - Add:
+     | Variable               | Value |
+     |------------------------|----------------------------------------|
+     | AWS_ACCESS_KEY_ID      | Your Access Key ID from CSV file      |
+     | AWS_SECRET_ACCESS_KEY  | Your Secret Access Key from CSV file  |
+     | USE_AWS                | `True` |
+   - **Remove `DISABLE_COLLECTSTATIC`** from Config Vars.
+
+4. **Create `custom_storages.py` in the project root**
+```python
+from django.conf import settings
+from storages.backends.s3boto3 import S3Boto3Storage
+
+class StaticStorage(S3Boto3Storage):
+    location = settings.STATICFILES_LOCATION
+
+class MediaStorage(S3Boto3Storage):
+    location = settings.MEDIAFILES_LOCATION
+```
+
+5. **Commit and Push Changes**
+```bash
+git add .
+git commit -m "Connected Django to AWS S3"
+git push
+```
+
+---
+
+Following these steps ensures that Django properly integrates with AWS S3 for static and media file storage. Let me know if you need further assistance! 🚀
 
 ---
 
