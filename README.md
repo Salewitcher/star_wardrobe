@@ -33,9 +33,10 @@ This business model emphasizes a fan-first approach by building trust and creati
 4. [Future Features](#future-features)
 5. [Bugs and Fixes](#bugs-and-fixes)
 6. [Technologies Used](#technologies-used)
-7. [Testing](#testing)
-8. [Deployment](#deployment)
-9. [Credits](#credits)
+7. [Database Schema](#database-schema)
+8. [Testing](#testing)
+9. [Deployment](#deployment)
+10. [Credits](#credits)
 
 ---
 
@@ -289,6 +290,49 @@ The checkout page includes fields for delivery details and payment information, 
 - **[GitHub](https://github.com/):** Version control and collaboration platform.
 - **[Heroku](https://www.heroku.com/):** Platform as a service (PaaS) used for deploying the application.
 - **[Gunicorn](https://gunicorn.org/):** WSGI HTTP server used for deploying Django applications.
+
+---
+
+## Database Schema
+
+### Products App
+
+- **Category**  
+  - `id` (Primary Key)  
+  - `name` (CharField)  
+  - `friendly_name` (CharField)  
+
+- **Product**  
+  - `id` (Primary Key)  
+  - `category` (ForeignKey → Category)  
+  - `sku` (CharField)  
+  - `name` (CharField)  
+  - `description` (TextField)  
+  - `has_sizes` (BooleanField)  
+  - `price` (DecimalField)  
+  - `rating` (DecimalField)  
+  - `image_url` (URLField)  
+  - `image` (ImageField)  
+
+- **Wishlist**  
+  - `user` (OneToOneField → User)  
+  - `products` (ManyToManyField → Product)  
+
+- **ProductReview**  
+  - `id` (Primary Key)  
+  - `product` (ForeignKey → Product)  
+  - `user` (ForeignKey → User)  
+  - `review_text` (TextField)  
+  - `rating` (IntegerField)  
+  - `created_at` (DateTimeField)  
+
+- **DiscountCode**  
+  - `id` (Primary Key)  
+  - `code` (CharField, unique)  
+  - `discount_percentage` (DecimalField)  
+  - `valid_from` (DateTimeField)  
+  - `valid_to` (DateTimeField)  
+  - `active` (BooleanField)  
 
 ---
 
