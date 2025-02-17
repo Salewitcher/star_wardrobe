@@ -172,7 +172,7 @@ def checkout_success(request, order_number):
     # Send Order Confirmation Email
     subject = f"Order Confirmation - {order_number}"
     message_plain = render_to_string(
-        'checkout/confirmation_email_body.txt',  # No .html, it's a plain text file
+        'checkout/confirmation_emails/confirmation_email_body.txt',  # No .html, it's a plain text file
         {'order': order, 'contact_email': settings.DEFAULT_FROM_EMAIL}
     )
 
