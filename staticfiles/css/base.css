@@ -66,6 +66,10 @@ span.asteriskField {
     background: none;
 }
 
+.text-muted {
+    color: white;
+}
+
 .tdcolor {
     color: #ffd700;
 }
