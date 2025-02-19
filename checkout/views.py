@@ -12,6 +12,7 @@ from products.models import Product
 from profiles.models import UserProfile
 from profiles.forms import UserProfileForm
 from bag.contexts import bag_contents
+from decimal import Decimal
 
 import stripe
 import json
@@ -69,8 +70,8 @@ def checkout(request):
             if request.user.is_authenticated:
                 profile = UserProfile.objects.get(user=request.user)
                 if profile.first_purchase_discount:
-                    discount_percentage = 10  # Adjust discount percentage if needed
-                    discount_applied = (discount_percentage / 100) * order_total
+                    discount_percentage = 20  # Adjust discount percentage if needed
+                    discount_applied = (Decimal(str(discount_percentage)) / Decimal("100")) * order_total
                     order_total -= discount_applied
                     profile.first_purchase_discount = False  # Mark discount as used
                     profile.save()
