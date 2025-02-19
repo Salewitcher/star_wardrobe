@@ -78,6 +78,10 @@ span.asteriskField {
     margin-top: 17rem;
 }
 
+.mtlower2 {
+    margin-top: 13rem;
+}
+
 .my-0 {
     background-color: #1a1a1a; /* Dark background for contrast */
     color: #ffd700;
@@ -255,13 +259,13 @@ input[name='q']:focus {
         top: 0;
         left: 0;
         right: 0;
-        background: rgba(17, 17, 17, 0.9); /* Slightly transparent */
+        background: rgba(17, 17, 17, 1);
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
         animation: fade-in 0.5s ease-in-out;
     }
 
     .mtlower {
-        margin-top: 20rem;
+        margin-top: 18rem;
     }
 }
 
@@ -419,4 +423,12 @@ footer {
 
 .facebook-link i {
     margin-right: 8px;
+}
+
+/* Pop up position */
+.popup {
+    position: fixed;
+    top: -5rem;
+    left: 2rem;
+    z-index: 999;        /* Ensures it appears above other elements */
 }

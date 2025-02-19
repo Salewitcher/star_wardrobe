@@ -1,6 +1,5 @@
 from django import forms
-from .models import UserProfile
-from .models import NewsletterSignup
+from .models import UserProfile, NewsletterSignup
 
 
 class UserProfileForm(forms.ModelForm):
@@ -25,14 +24,19 @@ class UserProfileForm(forms.ModelForm):
 
         self.fields['default_phone_number'].widget.attrs['autofocus'] = True
         for field in self.fields:
-            if field != 'default_country':
+            if field in placeholders:
                 if self.fields[field].required:
                     placeholder = f'{placeholders[field]} *'
                 else:
                     placeholder = placeholders[field]
                 self.fields[field].widget.attrs['placeholder'] = placeholder
+
             self.fields[field].widget.attrs['class'] = 'border-black rounded-0 profile-form-input'
             self.fields[field].label = False
+
+        # Hide first_purchase_discount field
+        self.fields['first_purchase_discount'].widget = forms.HiddenInput()
+
 
 class NewsletterSignupForm(forms.ModelForm):
     class Meta:
