@@ -41,11 +41,19 @@ class Order(models.Model):
 
     def update_total(self):
         self.order_total = self.lineitems.aggregate(Sum("lineitem_total"))["lineitem_total__sum"] or 0
+        
+        # Check if the user is a first-time buyer and apply discount
+        if self.user_profile and not self.user_profile.orders.exclude(id=self.id).exists():
+            self.discount = self.order_total * settings.FIRST_TIME_BUYER_DISCOUNT_PERCENTAGE / 100
+        else:
+            self.discount = 0
+        
         if self.order_total < settings.FREE_DELIVERY_THRESHOLD:
             self.delivery_cost = self.order_total * settings.STANDARD_DELIVERY_PERCENTAGE / 100
         else:
             self.delivery_cost = 0
-        self.grand_total = self.order_total + self.delivery_cost
+        
+        self.grand_total = self.order_total + self.delivery_cost - self.discount
         self.save()
 
     def save(self, *args, **kwargs):

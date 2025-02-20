@@ -39,7 +39,11 @@ def bag_contents(request):
         delivery = 0
         free_delivery_delta = 0
     
-    grand_total = delivery + total
+    discount = 0
+    if request.user.is_authenticated and not request.user.orders.exists():
+        discount = total * Decimal(settings.FIRST_TIME_BUYER_DISCOUNT_PERCENTAGE / 100)
+    
+    grand_total = delivery + total - discount
     
     context = {
         'bag_items': bag_items,
@@ -49,6 +53,7 @@ def bag_contents(request):
         'free_delivery_delta': free_delivery_delta,
         'free_delivery_threshold': settings.FREE_DELIVERY_THRESHOLD,
         'grand_total': grand_total,
+        'discount': discount,
     }
 
     return context
