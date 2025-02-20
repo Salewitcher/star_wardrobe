@@ -14,7 +14,4 @@ urlpatterns = [
     path('wishlist/remove/<int:product_id>/', views.remove_from_wishlist, name='remove_from_wishlist'),
     # Add this URL pattern for 'add_to_wishlist'
     path('wishlist/add/<int:product_id>/', views.add_to_wishlist, name='add_to_wishlist'),
-
-    # Discount Code URLs
-    path('discount/', views.discount_codes, name='discount_codes'),
 ]

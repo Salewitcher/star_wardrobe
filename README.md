@@ -108,31 +108,13 @@ User stories define the functionality and features of the Star WarDrobe from the
 
 ---
 
-## **Wireframes and Mockups**
+## **Wireframes**
 
 The following wireframes were created during the design phase to visualize the layout and structure of the website.
 
 ### **Homepage**
 
-+----------------------------------------------------+
-| STAR WAR DROBE        [ Search Bar ]  [ Cart $0 ] |
-+----------------------------------------------------+
-| [ ALL PRODUCTS ] [ REBEL APPAREL ] [ STAR WARS TOYS ] [ SPECIAL OFFERS ] |
-+----------------------------------------------------+
-| FREE DELIVERY ON ORDERS OVER $50!                 |
-+----------------------------------------------------+
-|     THE NEW COLLECTIONS ARE HERE                  |
-|    +----------------------------------+           |
-|    |         [ SHOP NOW ]             |           |
-|    +----------------------------------+           |
-|                                                  |
-|          [ Darth Vader Hero Image ]             |
-|                                                  |
-+----------------------------------------------------+
-| [ Subscribe to our Newsletter ]                  |
-| [ Follow us on Facebook ]                        |
-+----------------------------------------------------+
-
+![Homepage Wireframe](wireframes/homepage.png)
 
 The homepage was designed to showcase featured products, a search bar, and a navigation menu for easy access.
 
@@ -340,7 +322,6 @@ The checkout page includes fields for delivery details and payment information, 
 
 ### PEP8 Testing Screenshots
 
-### **Note :** Much of the code was left as it is because it got broken
 ![CI Python Linter](docs/images/pep8_1.png)
 ![CI Python Linter](docs/images/pep8_2.png)
 ![CI Python Linter](docs/images/pep8_3.png)
