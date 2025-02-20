@@ -66,17 +66,19 @@ def checkout(request):
             order_total = current_bag['grand_total']
 
             # Apply first purchase discount if eligible
-            discount_applied = 0
+            discount_applied = Decimal("0.00")
             if request.user.is_authenticated:
                 profile = UserProfile.objects.get(user=request.user)
                 if profile.first_purchase_discount:
-                    discount_percentage = 20  # Adjust discount percentage if needed
-                    discount_applied = (Decimal(str(discount_percentage)) / Decimal("100")) * order_total
-                    order_total -= discount_applied
+                    discount_percentage = Decimal("20.00")  # Adjust discount percentage if needed
+                    discount_applied = (discount_percentage / Decimal("100")) * order_total
                     profile.first_purchase_discount = False  # Mark discount as used
                     profile.save()
 
-            order.total = order_total
+            # Store discount in the order and save
+            order.discount = discount_applied
+            order.order_total = order_total - discount_applied
+            order.grand_total = order.order_total + order.delivery_cost  # Ensure grand total updates
             order.save()
 
             for item_id, item_data in bag.items():

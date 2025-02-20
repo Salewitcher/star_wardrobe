@@ -7,6 +7,9 @@ Order Date: {{ order.date }}
 
 Order Total: ${{ order.order_total }}
 Delivery: ${{ order.delivery_cost }}
+{% if order.discount > 0 %}
+Discount: -${{ order.discount }}
+{% endif %}
 Grand Total: ${{ order.grand_total }}
 
 Your order will be shipped to {{ order.street_address1 }} in {{ order.town_or_city }}, {{ order.country }}.
@@ -17,6 +20,5 @@ If you have any questions, feel free to contact us at {{ contact_email }}.
 
 Thank you for your order!
 
-Sincerely,
-
+Sincerely,  
 Star Wardrobe
