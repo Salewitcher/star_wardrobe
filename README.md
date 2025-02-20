@@ -29,7 +29,7 @@ This business model emphasizes a fan-first approach by building trust and creati
 ## Table Of Contents:
 1. [User Stories](#user-stories)
 2. [Features](#features)
-3. [Wireframes and Mockups](#wireframes-and-mockups)
+3. [Wireframes](#wireframes)
 4. [Future Features](#future-features)
 5. [Bugs and Fixes](#bugs-and-fixes)
 6. [Technologies Used](#technologies-used)
@@ -114,7 +114,7 @@ The following wireframes were created during the design phase to visualize the l
 
 ### **Homepage**
 
-![Homepage Wireframe](wireframes/homepage.png)
+![Homepage Wireframe](wireframes/homepage.pdf)
 
 The homepage was designed to showcase featured products, a search bar, and a navigation menu for easy access.
 
