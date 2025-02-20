@@ -31,7 +31,7 @@ def create_or_update_user_profile(sender, instance, created, **kwargs):
     """
     if created:
         UserProfile.objects.create(user=instance, first_purchase_discount=True)  # New users get the discount
-    instance.userprofile.save()
+    instance.profile.save()
 
 
 class NewsletterSignup(models.Model):
