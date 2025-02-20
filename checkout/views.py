@@ -76,11 +76,7 @@ def checkout(request):
                     profile.save()
 
             # Store discount in the order and save
-            order.discount = discount_applied
-            order.order_total = order_total - discount_applied
-            order.save()  # Save the order before updating totals
-
-            order.update_total()  # Ensure all totals (including delivery cost) are updated
+            order.discount = current_bag['discount']
             order.save()  # Save again to store updated grand total
 
             for item_id, item_data in bag.items():
@@ -177,6 +173,7 @@ def checkout_success(request, order_number):
     """
     save_info = request.session.get('save_info')
     order = get_object_or_404(Order, order_number=order_number)
+
 
     if request.user.is_authenticated:
         profile = UserProfile.objects.get(user=request.user)

@@ -43,15 +43,6 @@ class Order(models.Model):
     def update_total(self):
         self.order_total = self.lineitems.aggregate(Sum("lineitem_total"))["lineitem_total__sum"] or Decimal(0)
 
-        self.discount = Decimal(0)  # Ensuring it exists
-
-        if self.user_profile and self.user_profile.first_purchase_discount:
-            self.discount = self.order_total * Decimal(settings.FIRST_TIME_BUYER_DISCOUNT_PERCENTAGE) / Decimal(100)
-            self.discount = min(self.discount, self.order_total)  # Ensuring discount does not exceed total
-
-            # Update the user profile discount flag in the database directly
-            UserProfile.objects.filter(pk=self.user_profile.pk).update(first_purchase_discount=False)
-
         self.delivery_cost = (
             self.order_total * Decimal(settings.STANDARD_DELIVERY_PERCENTAGE) / Decimal(100)
             if self.order_total < settings.FREE_DELIVERY_THRESHOLD
