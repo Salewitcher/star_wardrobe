@@ -120,98 +120,20 @@ The homepage was designed to showcase featured products, a search bar, and a nav
 
 ### **Product Page**
 
-+----------------------------------------------------+
-| STAR WAR DROBE       [Search Bar]   My Account $0 |
-+----------------------------------------------------+
-| [ALL PRODUCTS]  [REBEL APPAREL]  [STAR WARS TOYS] |
-|                 [SPECIAL OFFERS]                  |
-+----------------------------------------------------+
-|      FREE DELIVERY ON ORDERS OVER $50!           |
-+----------------------------------------------------+
-
-+----------------------------------------------------+
-| [ Darth Vader Action Figure ]  [ Obi-Wan Figure ] |
-|        $77.00                      $67.00        |
-| [ Yoda Figure ]               [ Obi-Wan Cloak ]  |
-|    $46.00                          $47.00        |
-+----------------------------------------------------+
-| Sort by: [ Dropdown ]                             |
-+----------------------------------------------------+
-
-
+![Productpage Wireframe](wireframes/productpage.pdf)
+![Productdetail Wireframe](wireframes/productdetail.pdf)
 
 The product page focuses on displaying a detailed view of each item with an "Add to Cart" button.
 
 ### **Cart Page**
 
-+------------------------------------------------------+
-|                   SHOPPING BAG                       |
-+------------------------------------------------------+
-| Product Info       | Price   | Qty   | Subtotal     |
-+------------------------------------------------------+
-| [Darth Vader Img]  | $77.00  | [ - 1 + ] | $77.00 |
-| Darth Vader Action Figure                            |
-| Size: N/A | SKU: ACT002                              |
-| Update | Remove                                     |
-+------------------------------------------------------+
-| [Yoda Img]        | $46.00  | [ - 1 + ] | $46.00  |
-| Yoda Action Figure                                  |
-| Size: N/A | SKU: ACT005                              |
-| Update | Remove                                     |
-+------------------------------------------------------+
-| Bag Total: $123.00                                  |
-| Delivery: $0.00                                     |
-| Grand Total: $123.00                                |
-+------------------------------------------------------+
-| [ ◀ KEEP SHOPPING ]   [ SECURE CHECKOUT 🔒 ]         |
-+------------------------------------------------------+
-| Subscribe to our Newsletter                         |
-| Follow us on Facebook                               |
-+------------------------------------------------------+
-
+![Cart Wireframe](wireframes/cart.pdf)
 
 The cart page provides a summary of the user's selected items and allows them to proceed to checkout.
 
 ### **Checkout Page**
 
-+------------------------------------------------------+
-|                  STAR WAR DROBE                      |
-+------------------------------------------------------+
-| [Search Bar]  🔍    [ My Account ]   [Cart: $226.00]|
-+------------------------------------------------------+
-| [ ALL PRODUCTS ] [ REBEL APPAREL ] [ STAR WARS TOYS ] |
-| [ SPECIAL OFFERS ]                                    |
-+------------------------------------------------------+
-|       FREE DELIVERY ON ORDERS OVER $50!             |
-+------------------------------------------------------+
-|                DETAILS                               |
-| Full Name *   [__________________________]         |
-| Email Address * [________________________]         |
-+------------------------------------------------------+
-|                  DELIVERY DETAILS                    |
-| Phone Number *  [__________________________]        |
-| Street Address 1 * [________________________]       |
-| Street Address 2 [_________________________]       |
-| Town or City *  [__________________________]        |
-| County, State or Locality [_________________]       |
-| Postal Code     [__________________________]        |
-| Country *       [__________________________] ⌄      |
-| [ Create an account or login to save this info ]    |
-+------------------------------------------------------+
-|                  ORDER SUMMARY                       |
-| [Darth Vader Img] Darth Vader Action Figure        |
-| Size: N/A  Qty: 1                                  |
-| Item 1 Price: $56.00                               |
-| Item 2 Price: $47.00                               |
-| --------------------------------------------------- |
-| Order Total:  $226.00                              |
-| Delivery:     $0.00                                |
-| Grand Total:  $226.00                              |
-+------------------------------------------------------+
-|                  PAYMENT DETAILS                     |
-| [ Card Number ] [ Autofill link ]                   |
-+------------------------------------------------------+
-
+![Checkout Wireframe](wireframes/checkout.pdf)
 
 The checkout page includes fields for delivery details and payment information, with a final order summary.
 
