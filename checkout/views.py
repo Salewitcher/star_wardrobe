@@ -78,8 +78,10 @@ def checkout(request):
             # Store discount in the order and save
             order.discount = discount_applied
             order.order_total = order_total - discount_applied
-            order.grand_total = order.order_total + order.delivery_cost  # Ensure grand total updates
-            order.save()
+            order.save()  # Save the order before updating totals
+
+            order.update_total()  # Ensure all totals (including delivery cost) are updated
+            order.save()  # Save again to store updated grand total
 
             for item_id, item_data in bag.items():
                 try:
