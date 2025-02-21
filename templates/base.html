@@ -182,16 +182,28 @@
     {% endblock %}
 
     <footer class="container text-center my-4">
-        <a href="{% url 'newsletter_signup' %}" class="newsletter-link tdcolor">Subscribe to our Newsletter</a>
-        <div class="social-media-links">
-            <a href="https://www.facebook.com/profile.php?id=61570223193147" 
-               target="_blank" 
-               rel="nofollow noopener noreferrer" 
-               class="facebook-link">
-                <i class="fab fa-facebook-f"></i> Follow us on Facebook
-            </a>
+        <div class="row">
+            <div class="col-12 col-md-4 mb-2">
+                <a href="{% url 'newsletter_signup' %}" class="tdcolor font-weight-bold">
+                    <i class="fas fa-envelope"></i> Subscribe to our Newsletter
+                </a>
+            </div>
+            <div class="col-12 col-md-4 mb-2">
+                <a href="{% url 'contact' %}" class="tdcolor font-weight-bold">
+                    <i class="fas fa-phone-alt"></i> Contact Us
+                </a>
+            </div>
+            <div class="col-12 col-md-4">
+                <a href="https://www.facebook.com/profile.php?id=61570223193147"
+                   target="_blank"
+                   rel="nofollow noopener noreferrer"
+                   class="font-weight-bold">
+                    <i class="fab fa-facebook-f"></i> Follow us on Facebook
+                </a>
+            </div>
         </div>
     </footer>
+    
     
   </body>
 </html>

@@ -160,12 +160,12 @@ def delete_product(request, product_id):
 @login_required
 def wishlist(request):
     """ A view to show a user's wishlist """
-
-    wishlist = get_object_or_404(Wishlist, user=request.user)
+    wishlist, created = Wishlist.objects.get_or_create(user=request.user)
+    
     context = {
         'wishlist': wishlist,
     }
-
+    
     return render(request, 'products/wishlist.html', context)
     
 @login_required
@@ -190,7 +190,7 @@ def remove_from_wishlist(request, product_id):
 
     return redirect(reverse('wishlist'))
 
-
+# For future use
 def discount_codes(request):
     """ A view to show active discount codes """
     discount_codes = DiscountCode.objects.filter(active=True)
