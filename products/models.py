@@ -84,6 +84,7 @@ class ProductReview(models.Model):
         self.product.save()
 
 
+# For future use
 class DiscountCode(models.Model):
     """
     A model to represent discount codes for products
