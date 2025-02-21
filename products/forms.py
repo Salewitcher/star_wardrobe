@@ -41,7 +41,7 @@ class WishlistForm(forms.ModelForm):
 
     products = forms.ModelMultipleChoiceField(queryset=Product.objects.all(), widget=forms.CheckboxSelectMultiple)
 
-
+# For future use
 class DiscountCodeForm(forms.Form):
     code = forms.CharField(max_length=20, required=True, widget=forms.TextInput(attrs={'placeholder': 'Enter discount code'}))
 
