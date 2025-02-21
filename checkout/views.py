@@ -111,7 +111,7 @@ def checkout(request):
 
             # Notify user about the applied discount
             if discount_applied > 0:
-                messages.success(request, f'First purchase discount applied! You saved ${discount_applied:.2f}')
+                messages.success(request, f'First purchase discount applied! You saved ${discount_applied * Decimal("1.25"):.2f}')
 
             return redirect(reverse('checkout_success', args=[order.order_number]))
         else:
