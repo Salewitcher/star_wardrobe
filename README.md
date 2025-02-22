@@ -137,14 +137,30 @@ The cart page provides a summary of the user's selected items and allows them to
 
 The checkout page includes fields for delivery details and payment information, with a final order summary.
 
-
 ---
 
 ## **Future Features**
 
 ### 1. **Social Login Options**
-- **Facebook and Googlw Integration**:
+- **Facebook and Google Integration**:
   Integrate Facebook and Google login via allauth
+
+### 2. **Holiday Discount Special**
+
+ **Holiday 20% Discount Code - HOLIDAY2025**
+- **What It Does**:  
+  This feature allows customers to receive a 20% discount on their entire order by using the code **HOLIDAY2025** at checkout. It's a special holiday promotion designed to offer savings to our valued customers during the festive season.
+
+- **How It Works**:  
+  - Customers can add products to their cart as usual.
+  - When they proceed to checkout, they will be prompted to enter a discount code.
+  - Enter the code **HOLIDAY2025** in the discount code field to apply the 20% discount to the total order value.
+
+- **Offer Duration**:  
+  This discount is only available for a limited time, so be sure to use the code before it expires!
+
+- **Target**:  
+  This feature will boost sales during the holiday season by encouraging customers to shop more with the added incentive of a discount.
 
 ---
 
